@@ -185,6 +185,12 @@
   },
   "active": "69edce5b637eb58b",
   "lastOpenFiles": [
+    "projects/active/demo-sigma/README.md",
+    "projects/active/java-claude-test/README.md",
+    "projects/active/stroy/README.md",
+    "projects/active/demo-sigma",
+    "projects/active/java-claude-test",
+    "projects/active/stroy",
     "projects/active/ai-sklad/README.md",
     "knowledge/skills/discovery-interview.md",
     "MOC.md",
@@ -213,13 +219,7 @@
     "projects/active/sofia",
     "projects/active/gonka",
     "projects/active/ai-sklad",
-    "projects/active/leyka",
     "docs/decisions/adr-003-bilingual-readme.md",
-    "docs/decisions/adr-002-doc-set-per-project.md",
-    "docs/decisions/adr-001-default-stack.md",
-    "concepts/iq-roadmap.md",
-    "concepts/kosgu.md",
-    "projects/active/ragraf",
-    "inbox"
+    "docs/decisions/adr-002-doc-set-per-project.md"
   ]
 }

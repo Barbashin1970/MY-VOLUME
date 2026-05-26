@@ -38,8 +38,10 @@ tags: [meta, moc]
 | [LEYKA](projects/active/leyka/README.md) | A — заказной | FastAPI + React | Стек по умолчанию, полный комплект ГОСТ-19, КОСГУ/Устав |
 | [RAGRAF](projects/active/ragraf/README.md) | A — заказной | FastAPI + React + DuckDB | Задачный подход, SKILL-GOST-19, позиционирование |
 | [AI-SKLAD](projects/active/ai-sklad/README.md) | D — демо | Python static | IDEA.md / 6 вопросов |
+| [SOFIA — Арома София](projects/active/sofia/README.md) | D — продакшен-демо | React+Vite SVG | Ароматерапевт «Цветок Мудрости» (Юнг+нумерология), Vercel |
+| [STROY](projects/active/stroy/README.md) | D — демо | Python Streamlit | Text-to-SQL по охране труда, RDF-онтология |
+| [demo-sigma](projects/active/demo-sigma/README.md) | C — научно-инструментальный | React 19 + Vite 8 | Sigma-оператор ЕДДС, видеостена, тренажёр |
 | [GONKA](projects/active/gonka/README.md) | B — pet | PWA Vite + React 19 | Серия SKILL-01…09 |
-| [SOFIA](projects/active/sofia/README.md) | B — pet | PWA | SKILL-структура |
 | [KNIFFEL](projects/active/kniffel/README.md) | B — pet | PWA | SKILL-структура |
 | [POLINOM](projects/active/polinom/README.md) | C — научно-инструментальный | Python CLI | Билингвальный README, sigma-методология |
 | [POLINOM-JAVA](projects/active/polinom-java/README.md) | C — научно-инструментальный | Java + JMH | Перенос правил Сигма на JVM |

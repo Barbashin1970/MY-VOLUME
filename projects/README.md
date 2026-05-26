@@ -82,20 +82,20 @@ projects/
 
 Уже существующие репозитории в `~/`:
 
-| Slug | Папка | Стек / суть |
-|------|-------|-------------|
-| ai-sklad | `~/AI-SKLAD/` | ИИ-аналитик остатков, Python + статика |
-| gonka | `~/GONKA/` | PWA-гонка, React 19 + Socket.io |
-| java-claude-test | `~/JAVA-CLAUDE-TEST/` | Java playground под Claude |
-| kniffel | `~/KNIFFEL/` | Kniffel/Yahtzee клон |
-| leyka | `~/LEYKA/` | Корпоративный таск-трекер, FastAPI + React |
-| nsk-opendata-bot | `~/NSK_OpenData_Bot/` | Бот для открытых данных НСК |
-| polinom | `~/POLINOM/` | Полиномиальная виз/админка |
-| polinom-java | `~/POLINOM-JAVA/` | Java-вариант POLINOM |
-| ragraf | `~/RAGRAF/` | Regulation Management + GraphRAG (см. `../SKILL.md`) |
-| sofia | `~/SOFIA/` | Игра/PWA |
-| stroy | `~/STROY/` | Стройка/смета |
-| demo-sigma | `~/demo-sigma-main/` | Демо Sigma-методологии |
+| Slug | Папка | Стек / суть | Карточка в vault'е |
+|------|-------|-------------|-----|
+| ai-sklad | `~/AI-SKLAD/` | ИИ-аналитик остатков, Python + статика | ✅ |
+| demo-sigma | `~/demo-sigma-main/` | Sigma-оператор ЕДДС, React 19 + Vite 8, видеостена + тренажёр | ✅ |
+| gonka | `~/GONKA/` | PWA-гонка Parchisi/Ludo, React 19 + Socket.io | ✅ |
+| java-claude-test | `~/JAVA-CLAUDE-TEST/` | Песочница Java + Claude (без карточки в vault'е) | ❌ песочница |
+| kniffel | `~/KNIFFEL/` | Kniffel/Yahtzee клон, PWA | ✅ |
+| leyka | `~/LEYKA/` | Корпоративный таск-трекер ЦИИ НГУ, FastAPI + React | ✅ |
+| nsk-opendata-bot | `~/NSK_OpenData_Bot/` | Бот по открытым данным Новосибирска, IQ-roadmap | ✅ |
+| polinom | `~/POLINOM/` | Sigma-методология полиномиальной сложности, sigma-audit CLI | ✅ |
+| polinom-java | `~/POLINOM-JAVA/` | Java-версия POLINOM, перенос правил на JVM | ✅ |
+| ragraf | `~/RAGRAF/` | Платформа замкнутого контура «датчик ↔ регламент ↔ задача» | ✅ |
+| sofia | `~/SOFIA/` | **Арома София** — ароматерапевт «Цветок Мудрости» (Юнг + нумерология), Vercel | ✅ |
+| stroy | `~/STROY/` | ИИ-помощник по охране труда, Streamlit + Text-to-SQL поверх RDF | ✅ |
 
 > Когда возьмёшься за один из них всерьёз — создай папку в `active/<slug>/`
 > и заполни по шаблону. Не делай это all-at-once — заводи карточку, когда

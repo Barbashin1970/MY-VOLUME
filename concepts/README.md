@@ -109,3 +109,9 @@ tags: [meta, concepts]
 - [gost-19](gost-19.md) — ЕСПД, стандарт документации ПО
 - [kosgu](kosgu.md) — статьи бюджета для гос/корп
 - [iq-roadmap](iq-roadmap.md) — NSK-модель роста системы
+
+### Качество, тестирование, DevOps
+- [test-pyramid](test-pyramid.md) — юнит / интеграционные / E2E / ручные
+- [test-design-techniques](test-design-techniques.md) — черновик-чистовик, классы эквивалентности, туры
+- [bug-tracking](bug-tracking.md) — severity vs priority, статусы
+- [ci-cd](ci-cd.md) — непрерывная интеграция и доставка

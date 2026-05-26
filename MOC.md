@@ -29,6 +29,7 @@ tags: [meta, moc]
 10. **[10 — Mapping Product Focus ↔ 9 стадий](docs/playbooks/10-product-focus-mapping.md)** — какие инструменты PM-методологии (JTBD, Lean Canvas, OKR…) применять на каждой стадии
 11. **[11 — Эксплуатация и техподдержка (постфаза)](docs/playbooks/11-support-operations.md)** — после релиза: роли ТП, SLA, статусы запросов, service desk
 12. **[12 — 5 букв + 11 спринтов](docs/playbooks/12-product-strategy-curriculum.md)** — современная PM-канва (Business / UX / Tech / Marketing / Management) и детальная последовательность работы с продуктом по 11 спринтам
+13. **[13 — управление качеством + ski-coding](docs/playbooks/13-quality-management.md)** — классический QA-цикл (Test Analysis / Design / Execution / Automation / Monitoring) × 9 стадий ЖЦ × адаптация под соло-режим
 
 ---
 
@@ -96,6 +97,13 @@ tags: [meta, moc]
 - [6 шляп Эдварда де Боно](concepts/six-thinking-hats.md) — facilitation-метод.
 - [SLA — Service Level Agreement](concepts/sla.md) — соглашение об уровне обслуживания.
 
+### Качество, тестирование, DevOps
+
+- [Пирамида тестирования](concepts/test-pyramid.md) — юнит → интеграционные → E2E → ручные.
+- [Техники тест-дизайна](concepts/test-design-techniques.md) — черновик-чистовик, классы эквивалентности, туры.
+- [Баг-трекинг](concepts/bug-tracking.md) — серьёзность vs приоритет, статусы.
+- [CI/CD](concepts/ci-cd.md) — непрерывная интеграция и доставка.
+
 ### Документация
 
 - [ГОСТ-19 (ЕСПД)](concepts/gost-19.md) — российский стандарт документации ПО.
@@ -117,7 +125,7 @@ tags: [meta, moc]
 - [knowledge/languages/](knowledge/languages/) — идиомы языков
 - [knowledge/stacks/](knowledge/stacks/) — рабочие стеки (FastAPI+React, PWA, Java)
 - [knowledge/patterns/](knowledge/patterns/) — переносимые архитектурные приёмы
-- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом)
+- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом) + **[ski-coding](knowledge/skills/ski-coding.md)** (методология соло-разработки с LLM, ноу-хау Олега)
 - [knowledge/tools/](knowledge/tools/) — внешние инструменты (Claude Code, Obsidian, Vercel)
 - [knowledge/lessons/](knowledge/lessons/) — **уроки, выученные на боль** (читай первым на старте нового проекта)
 

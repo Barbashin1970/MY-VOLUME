@@ -1,5 +1,5 @@
 ---
-title: Bugs & Fixes — <project>
+title: Bugs & Fixes
 description: Локальный журнал багов. То, что применимо везде — промоутится в knowledge/lessons/.
 tags: [project, bugs]
 updated: 2026-05-26
@@ -14,16 +14,16 @@ updated: 2026-05-26
 
 ---
 
-## 2026-05-26 — <короткое название бага>
+## 2026-05-26 — «короткое название бага»
 
 **Симптом.** Что увидели.
 
 **Причина.** Root cause.
 
 **Фикс.** Что поменяли. Файлы/коммиты:
-- `~/<PROJECT>/<file>:<line>`
+- `~/«PROJECT»/«file»:«line»`
 
 **Урок.** Что вынесли. **Применимо вне проекта?** да/нет. Если да:
-→ `[knowledge/lessons/<slug>.md](../../../knowledge/lessons/<slug>.md)`.
+→ `[knowledge/lessons/«slug».md](../../../knowledge/lessons/)`.
 
 ---

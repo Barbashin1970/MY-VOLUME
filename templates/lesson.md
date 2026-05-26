@@ -1,14 +1,18 @@
 ---
-title: <Урок одной строкой>
+title: Урок одной строкой
 description: Что случилось и какой вывод сделан.
-tags: [lesson, bug, stack/<стек>]
-severity: low | medium | high | critical
-project_origin: <название проекта, где словил>
+tags: [lesson, bug]
+severity: medium
+project_origin: ""
 created: 2026-05-26
 updated: 2026-05-26
 ---
 
-# Урок: <название>
+# Урок: «название»
+
+> **Заполни:** `title`, `severity` (low/medium/high/critical),
+> `project_origin` (slug проекта). Добавь нужный stack-тег вида
+> `stack/python` или `stack/react` после `bug`.
 
 ## Что произошло
 
@@ -34,6 +38,6 @@ Root cause. **Не «потому что баг»** — реальная при�
 
 ## Связанное
 
-- Проект: [projects/<x>/bugs.md](../../projects/active/<x>/bugs.md)
+- Проект: [projects/«slug»/bugs.md](../../projects/active/)
 - Похожие уроки: [link](other-lesson.md)
-- Концепты, которых это касается: [concepts/<x>.md](../../concepts/<x>.md)
+- Концепты, которых это касается: [concepts/«term».md](../../concepts/)

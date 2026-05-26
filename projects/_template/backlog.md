@@ -1,5 +1,5 @@
 ---
-title: Backlog <project>
+title: Backlog проекта
 tags: [project, backlog]
 updated: 2026-05-26
 ---

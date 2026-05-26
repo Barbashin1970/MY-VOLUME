@@ -1,18 +1,21 @@
 ---
-title: <ADR-NNN: краткое решение>
+title: ADR-NNN — краткое решение
 description: Что мы решили и в каком контексте.
 tags: [adr, decision]
-status: proposed | accepted | superseded
+status: proposed
 date: 2026-05-26
 supersedes: null
 superseded_by: null
 ---
 
-# ADR-NNN: <Решение>
+# ADR-NNN — «Решение»
 
 Формат — Architecture Decision Record (Michael Nygard). Решение
 **неизменяемо** после `accepted`. Если меняешь — создаёшь новый ADR со
 ссылкой `supersedes`.
+
+> **Заполни:** замени `NNN` на номер, `«Решение»` — на формулировку,
+> `status` — на `proposed` / `accepted` / `superseded`.
 
 ## Контекст
 
@@ -45,5 +48,5 @@ superseded_by: null
 
 ## Ссылки
 
-- Проект-источник: `[projects/<x>](../../projects/active/<x>/)`
+- Проект-источник: `[projects/«slug»](../../projects/active/«slug»/)`
 - Связанные ADR: [ADR-NNN](adr-NNN-other.md)

@@ -1,15 +1,16 @@
 ---
-title: 2026-05-26 — <тема встречи>
+title: 2026-05-26 — тема встречи
 description: Одна строка — главный итог.
-tags: [meeting, project/<x>]
+tags: [meeting]
 date: 2026-05-26
-attendees:
-  - <имя 1>
-  - <имя 2>
-project: <slug проекта>
+attendees: []
+project: ""
 ---
 
-# 2026-05-26 — <тема>
+# 2026-05-26 — «тема»
+
+> **Заполни:** `title` (дата + тема), `attendees` (список имён),
+> `project` (slug). Добавь тег `project/«slug»` к существующему `meeting`.
 
 ## Цель встречи
 
@@ -27,10 +28,10 @@ project: <slug проекта>
 
 ## Действия (action items)
 
-- [ ] **<Имя>** — что делает — до `YYYY-MM-DD`.
-- [ ] **<Имя>** — …
+- [ ] **«Имя»** — что делает — до `YYYY-MM-DD`.
+- [ ] **«Имя»** — …
 
 ## Связанное
 
-- [projects/<x>](../projects/active/<x>/)
-- Прошлая встреча: [link](../YYYY-MM/...md)
+- [projects/«slug»](../projects/active/)
+- Прошлая встреча: [link](../YYYY-MM/)

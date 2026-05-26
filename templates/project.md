@@ -1,19 +1,23 @@
 ---
-title: <Название проекта>
+title: Название проекта
 description: Одна строка — что делает проект.
-tags: [project, stack/<стек>]
-status: active   # active | paused | archived
-repo: ~/<PROJECT>
+tags: [project]
+status: active
+repo: ""
 created: 2026-05-26
 updated: 2026-05-26
-related:
-  - knowledge/stacks/<stack>.md
+related: []
 ---
 
-# <Название проекта>
+# «Название проекта»
 
-> **Где код:** `~/<PROJECT>/`
-> **Прод/демо:** <url или «локально»>
+> **Заполни:** `title`, `description`, `repo` (~/PROJECT). Добавь тег
+> `stack/«stack»` (например `stack/fastapi-react`). Заполни `related`
+> ссылками на knowledge/stacks/.
+> Статус: `active` / `paused` / `archived`.
+
+> **Где код:** `~/«PROJECT»/`
+> **Прод/демо:** «url или локально»
 > **Статус:** active / paused / archived
 
 ## Зачем (Why)
@@ -42,5 +46,5 @@ related:
 
 ## Связанные знания
 
-- [knowledge/stacks/<stack>.md](../../knowledge/stacks/) — стек, который тут использовали
+- [knowledge/stacks/«stack».md](../../knowledge/stacks/) — стек, который тут использовали
 - [knowledge/skills/...](../../knowledge/skills/) — рецепты, рождённые в этом проекте

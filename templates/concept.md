@@ -1,15 +1,17 @@
 ---
-title: <Термин>
+title: Термин
 description: Одна строка — что это.
-tags: [concept, domain/<домен>]
-aliases:
-  - <синоним 1>
-  - <синоним 2>
+tags: [concept]
+aliases: []
 created: 2026-05-26
 updated: 2026-05-26
 ---
 
-# <Термин>
+# «Термин»
+
+> **Заполни:** `title`, `description`. Добавь нужный domain-тег вида
+> `domain/methodology` или `domain/qa` к существующему `concept`.
+> Заполни `aliases` синонимами и переводами.
 
 **Краткое определение** — одно-два предложения. Так, чтобы можно было
 скопировать в чат с заказчиком.
@@ -29,5 +31,5 @@ updated: 2026-05-26
 
 ## Где встречается
 
-- `[projects/<x>](../projects/active/<x>/)`
-- `[knowledge/stacks/<y>.md](../knowledge/stacks/<y>.md)`
+- `[projects/«slug»](../projects/active/)`
+- `[knowledge/stacks/«stack».md](../knowledge/stacks/)`

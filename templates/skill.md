@@ -1,13 +1,17 @@
 ---
-title: <Что умеешь делать>
+title: Что умеешь делать
 description: Одной строкой — какую задачу решает этот рецепт.
-tags: [skill, stack/<стек>, lang/<язык>]
-origin: projects/<откуда-вытащил>
+tags: [skill]
+origin: ""
 created: 2026-05-26
 updated: 2026-05-26
 ---
 
-# Skill: <Название>
+# Skill: «Название»
+
+> **Заполни:** `title`, `description`, `origin` (например
+> `projects/active/ragraf`). Добавь теги `stack/«stack»` и
+> `lang/«язык»` к существующему `skill`.
 
 ## Когда применять
 
@@ -17,7 +21,7 @@ updated: 2026-05-26
 
 Минимальный рабочий пример. Код — самодостаточный.
 
-```<lang>
+```python
 # код, который можно скопировать и запустить
 ```
 
@@ -32,5 +36,5 @@ updated: 2026-05-26
 
 ## Откуда взято
 
-- Проект: `~/<PROJECT>/<file>:<line>`
+- Проект: `~/«PROJECT»/«file»:«line»`
 - Связанные skills: [link](../skills/other.md)

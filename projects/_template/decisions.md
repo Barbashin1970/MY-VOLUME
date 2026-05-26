@@ -1,5 +1,5 @@
 ---
-title: Decisions — <project>
+title: Decisions (локальные)
 description: Локальные решения проекта. Системные промоутятся в docs/decisions/.
 tags: [project, decisions]
 updated: 2026-05-26
@@ -13,7 +13,7 @@ updated: 2026-05-26
 
 ---
 
-## 2026-05-26 — <короткое решение>
+## 2026-05-26 — «короткое решение»
 
 **Контекст.** Какая ситуация.
 

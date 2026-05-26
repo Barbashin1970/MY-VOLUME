@@ -1,17 +1,20 @@
 ---
-title: <Название проекта>
+title: Название проекта
 description: Одна строка — что делает проект.
-tags: [project, stack/<стек>]
+tags: [project]
 status: active
-repo: ~/<PROJECT>
+repo: ""
 created: 2026-05-26
 updated: 2026-05-26
 ---
 
-# <Название проекта>
+# «Название проекта»
 
-> **Где код:** `~/<PROJECT>/`
-> **Прод/демо:** <url или «локально»>
+> **Заполни:** `title`, `description`, `repo` (~/PROJECT).
+> Добавь тег `stack/«stack»` к существующему `project`.
+
+> **Где код:** `~/«PROJECT»/`
+> **Прод/демо:** «url или локально»
 > **Статус:** active
 
 ## Зачем
@@ -31,5 +34,5 @@ updated: 2026-05-26
 
 ## Связанное знание
 
-- `[knowledge/stacks/<stack>.md](../../../knowledge/stacks/)` — стек
+- `[knowledge/stacks/«stack».md](../../../knowledge/stacks/)` — стек
 - `[knowledge/skills/...](../../../knowledge/skills/)` — рецепты

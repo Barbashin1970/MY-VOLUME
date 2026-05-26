@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/mom-test.md",
+                "file": "templates/person.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mom-test"
+              "title": "person"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/mom-test.md",
+                "file": "templates/person.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для mom-test"
+              "title": "Обратные ссылки для person"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "concepts/mom-test.md",
+                "file": "templates/person.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из mom-test"
+              "title": "Исходящие ссылки из person"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "concepts/mom-test.md",
+                "file": "templates/person.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура mom-test"
+              "title": "Структура person"
             }
           }
         ]
@@ -185,13 +185,25 @@
   },
   "active": "69edce5b637eb58b",
   "lastOpenFiles": [
+    "templates/project.md",
+    "templates/person.md",
+    "templates/meeting.md",
+    "templates/lesson.md",
+    "templates/decision.md",
+    "templates/concept.md",
+    "concepts/ci-cd.md",
+    "concepts/test-design-techniques.md",
+    "concepts/bug-tracking.md",
+    "concepts/test-pyramid.md",
+    "docs/playbooks/13-quality-management.md",
+    "knowledge/skills/ski-coding.md",
+    "concepts/mom-test.md",
     "concepts/zadachny-podhod.md",
     "concepts/bartle-psychotypes.md",
     "concepts/anti-scope.md",
     "concepts/team-models.md",
     "concepts/aarrr-funnel.md",
     "docs/playbooks/04-tz-and-gost-19.md",
-    "concepts/mom-test.md",
     "concepts/six-thinking-hats.md",
     "concepts/plg.md",
     "concepts/prioritization-frameworks.md",
@@ -199,21 +211,9 @@
     "concepts/vpc.md",
     "concepts/unit-economics.md",
     "docs/playbooks/12-product-strategy-curriculum.md",
-    "docs/playbooks/11-support-operations.md",
-    "docs/playbooks/10-product-focus-mapping.md",
-    "concepts/sla.md",
-    "concepts/lean-canvas.md",
-    "concepts/jtbd.md",
-    "concepts/product-focus.md",
-    "docs/TZ.md",
-    "docs/playbooks/01-idea-formalization.md",
-    "projects/active/demo-sigma/README.md",
-    "projects/active/java-claude-test/README.md",
-    "projects/active/stroy/README.md",
     "projects/active/demo-sigma",
     "projects/active/java-claude-test",
     "projects/active/stroy",
-    "projects/active/ai-sklad/README.md",
     "projects/active/nsk-opendata-bot",
     "projects/active/polinom-java",
     "projects/active/polinom",

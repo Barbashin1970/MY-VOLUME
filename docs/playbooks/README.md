@@ -1,6 +1,6 @@
 ---
 title: docs/playbooks/
-description: 13 плейбуков жизненного цикла проекта — от идеи до роста + мета-плейбуки.
+description: 14 плейбуков жизненного цикла проекта + 3 мета-плейбука (Product Focus / стратегия / качество).
 tags: [meta, docs, playbooks]
 ---
 
@@ -31,6 +31,7 @@ tags: [meta, docs, playbooks]
 | **мета — Product Focus** | [10-product-focus-mapping](10-product-focus-mapping.md) | Концепт: [product-focus](../../concepts/product-focus.md) |
 | **постфаза — эксплуатация и ТП** | [11-support-operations](11-support-operations.md) | Обезличенный регламент SaaS-компании v2.04 + [sla](../../concepts/sla.md) |
 | **мета — 5 букв + 11 спринтов** | [12-product-strategy-curriculum](12-product-strategy-curriculum.md) | Курс «Стратегия развития продукта» v3.0 (обезличенный) + 10 концептов спринтов |
+| **мета — управление качеством** | [13-quality-management](13-quality-management.md) | Регламент QA v1.1 (обезличенный) × 9 стадий ЖЦ × [ski-coding](../../knowledge/skills/ski-coding.md) для соло-режима |
 
 ---
 

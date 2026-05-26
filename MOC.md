@@ -89,7 +89,7 @@ tags: [meta, moc]
 - [knowledge/languages/](knowledge/languages/) — идиомы языков
 - [knowledge/stacks/](knowledge/stacks/) — рабочие стеки (FastAPI+React, PWA, Java)
 - [knowledge/patterns/](knowledge/patterns/) — переносимые архитектурные приёмы
-- [knowledge/skills/](knowledge/skills/) — атомарные рецепты (Drag-and-Drop, Optimistic mutations, SHACL bridge)
+- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом)
 - [knowledge/tools/](knowledge/tools/) — внешние инструменты (Claude Code, Obsidian, Vercel)
 - [knowledge/lessons/](knowledge/lessons/) — **уроки, выученные на боль** (читай первым на старте нового проекта)
 

@@ -39,15 +39,30 @@ tags: [meta, claude]
 
 ## При старте нового проекта — обязательная процедура
 
-1. Прочитай **[docs/playbooks/00-product-lifecycle.md](docs/playbooks/00-product-lifecycle.md)** —
-   карта 9 стадий ЖЦ.
-2. Прочитай **[ADR-002 — комплект документации](docs/decisions/adr-002-doc-set-per-project.md)** —
-   определи категорию проекта (A/B/C/D).
-3. Открой плейбук стадии 1 — **[01-idea-formalization](docs/playbooks/01-idea-formalization.md)**.
-4. Просмотри **похожие проекты** в [projects/active/](projects/active/) —
-   используй их карточки как референс.
-5. Прочитай **[knowledge/lessons/](knowledge/lessons/)** — каких граблей
-   избегать (когда заведутся файлы).
+🚨 **Если Олег говорит «у меня идея», «хочу новый проект», «нужно
+решить X», «давай сделаем Y» — НЕ начинай писать код или план.**
+Применяй skill **[knowledge/skills/discovery-interview.md](knowledge/skills/discovery-interview.md)**:
+
+1. **Pre-Analysis (без вопросов).** Прочитай `MOC.md`, просмотри
+   `projects/active/*/README.md`, сделай гипотезу категории и
+   похожих проектов.
+2. **Restate** — переформулируй идею одним абзацем, спроси «правильно понял?».
+3. **Wave-by-wave интервью** (3 волны по 2-3 вопроса через
+   `AskUserQuestion`): пользователь/контекст → задача/метрика/антископ
+   → категория/стек/теор. рамка.
+4. **Аудит против базы предупреждений** (см. skill §«База предупреждений»):
+   возражай со ссылкой на ADR / урок / прошлый проект.
+5. **Output** — черновик IDEA.md в `inbox/discovery-<slug>-YYYY-MM-DD.md`.
+   **Не в `projects/active/` сразу** — Олег читает и подтверждает.
+6. **Hand-off** — спроси «прерваться или сразу к плану?».
+
+После discovery:
+
+- Прочитай **[docs/playbooks/00-product-lifecycle.md](docs/playbooks/00-product-lifecycle.md)** — карта 9 стадий ЖЦ.
+- Прочитай **[ADR-002](docs/decisions/adr-002-doc-set-per-project.md)** — комплект документов по категории.
+- Открой плейбук стадии 1 — **[01-idea-formalization](docs/playbooks/01-idea-formalization.md)** для оформления полной IDEA.md.
+- Просмотри похожие проекты в [projects/active/](projects/active/).
+- Прочитай **[knowledge/lessons/](knowledge/lessons/)** — каких граблей избегать.
 
 ## Категории проектов (см. ADR-002)
 

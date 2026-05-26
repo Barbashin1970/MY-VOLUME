@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/architecture/README.md",
+                "file": "docs/playbooks/01-idea-formalization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "01-idea-formalization"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/architecture/README.md",
+                "file": "docs/playbooks/01-idea-formalization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для README"
+              "title": "Обратные ссылки для 01-idea-formalization"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/architecture/README.md",
+                "file": "docs/playbooks/01-idea-formalization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из README"
+              "title": "Исходящие ссылки из 01-idea-formalization"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/architecture/README.md",
+                "file": "docs/playbooks/01-idea-formalization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура README"
+              "title": "Структура 01-idea-formalization"
             }
           }
         ]
@@ -185,6 +185,11 @@
   },
   "active": "69edce5b637eb58b",
   "lastOpenFiles": [
+    "projects/active/ai-sklad/README.md",
+    "knowledge/skills/discovery-interview.md",
+    "MOC.md",
+    "CLAUDE.md",
+    "docs/architecture/README.md",
     "knowledge/lessons/README.md",
     "knowledge/languages/README.md",
     "meetings/README.md",
@@ -199,7 +204,6 @@
     "projects/active/kniffel/README.md",
     "projects/active/sofia/README.md",
     "projects/active/gonka/README.md",
-    "projects/active/ai-sklad/README.md",
     "projects/active/ragraf/README.md",
     "projects/active/leyka/README.md",
     "projects/active/nsk-opendata-bot",
@@ -215,10 +219,6 @@
     "docs/decisions/adr-001-default-stack.md",
     "concepts/iq-roadmap.md",
     "concepts/kosgu.md",
-    "concepts/sigma-methodology.md",
-    "concepts/anti-scope.md",
-    "concepts/gost-19.md",
-    "concepts/tfs-anokhina.md",
     "projects/active/ragraf",
     "inbox"
   ]

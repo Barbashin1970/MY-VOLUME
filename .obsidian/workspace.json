@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SKILL.md",
+                "file": "assets/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SKILL"
+              "title": "README"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SKILL.md",
+                "file": "assets/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для SKILL"
+              "title": "Обратные ссылки для README"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SKILL.md",
+                "file": "assets/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из SKILL"
+              "title": "Исходящие ссылки из README"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SKILL.md",
+                "file": "assets/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура SKILL"
+              "title": "Структура README"
             }
           }
         ]
@@ -185,18 +185,32 @@
   },
   "active": "69edce5b637eb58b",
   "lastOpenFiles": [
+    "SKILL.md",
+    "inbox/README.md",
+    "concepts/README.md",
+    "meetings/README.md",
+    "people/README.md",
+    "docs/playbooks/README.md",
+    "docs/decisions/README.md",
+    "docs/architecture/README.md",
+    "docs/README.md",
+    "knowledge/lessons/README.md",
+    "knowledge/tools/README.md",
+    "knowledge/skills/README.md",
+    "knowledge/patterns/README.md",
+    "knowledge/stacks/README.md",
+    "knowledge/languages/README.md",
+    "knowledge/README.md",
+    "projects/_template/decisions.md",
+    "projects/_template/bugs.md",
+    "projects/_template/backlog.md",
+    "projects/_template/arc.md",
+    "projects/_template/README.md",
+    "projects/README.md",
     "templates/person.md",
     "templates/meeting.md",
     "templates/concept.md",
     "templates/decision.md",
-    "templates/lesson.md",
-    "templates/skill.md",
-    "templates/project.md",
-    "templates/README.md",
-    "assets/README.md",
-    "CLAUDE.md",
-    "MOC.md",
-    "README.md",
     "inbox",
     "concepts",
     "meetings",
@@ -206,7 +220,6 @@
     "docs/architecture",
     "docs",
     "knowledge/tools",
-    "knowledge/stacks",
-    "SKILL.md"
+    "knowledge/stacks"
   ]
 }

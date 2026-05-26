@@ -15,7 +15,7 @@ tags: [meta, moc]
 
 **Мастер-плейбук:** [docs/playbooks/00-product-lifecycle.md](docs/playbooks/00-product-lifecycle.md)
 
-9 стадий с собственными плейбуками:
+9 стадий + 2 мета-плейбука:
 
 1. [01 — Формализация идеи (IDEA.md, 6 вопросов)](docs/playbooks/01-idea-formalization.md)
 2. [02 — Поиск ниши и позиционирование](docs/playbooks/02-niche-positioning.md)
@@ -26,6 +26,9 @@ tags: [meta, moc]
 7. [07 — Комплект документации ГОСТ-19](docs/playbooks/07-gost-19-doc-set.md)
 8. [08 — README + лендинг](docs/playbooks/08-readme-landing.md)
 9. [09 — Устав / отчёт / IQ-roadmap / рост](docs/playbooks/09-charter-reports-growth.md)
+10. **[10 — Mapping Product Focus ↔ 9 стадий](docs/playbooks/10-product-focus-mapping.md)** — какие инструменты PM-методологии (JTBD, Lean Canvas, OKR…) применять на каждой стадии
+11. **[11 — Эксплуатация и техподдержка (постфаза)](docs/playbooks/11-support-operations.md)** — после релиза: роли ТП, SLA, статусы запросов, service desk
+12. **[12 — 5 букв + 11 спринтов](docs/playbooks/12-product-strategy-curriculum.md)** — современная PM-канва (Business / UX / Tech / Marketing / Management) и детальная последовательность работы с продуктом по 11 спринтам
 
 ---
 
@@ -69,6 +72,29 @@ tags: [meta, moc]
 - [Задачный подход (Гончаров-Свириденко)](concepts/zadachny-podhod.md) — 4 компонента задачи. Базис RAGRAF.
 - [ТФС Анохина](concepts/tfs-anokhina.md) — 6 стадий деятельности.
 - [Сигма-методология](concepts/sigma-methodology.md) — полиномиальная сложность. Базис POLINOM.
+- **[Product Focus](concepts/product-focus.md)** — гибкая методология продуктового менеджмента (4 модели). Дополняет 9 стадий ЖЦ.
+
+### Продуктовая стратегия и исследования
+
+- [JTBD — Jobs To Be Done](concepts/jtbd.md) — главный инструмент фокуса «Клиент».
+- [VPC — Value Proposition Canvas](concepts/vpc.md) — карта ценности + профиль потребителя (Остервальдер).
+- [Lean Canvas](concepts/lean-canvas.md) — одностраничная бизнес-модель.
+- [Mom Test](concepts/mom-test.md) — правила интервью Роба Фитцпатрика.
+- [Bartle-психотипы](concepts/bartle-psychotypes.md) — сегментация по мотивам.
+- [Пропасть Мура](concepts/moores-chasm.md) — кривая принятия инноваций.
+
+### Метрики, экономика, рост
+
+- [AARRR — пиратская воронка](concepts/aarrr-funnel.md) — Acquisition / Activation / Retention / Revenue / Referral.
+- [Юнит-экономика](concepts/unit-economics.md) — TAM/SAM/SOM, ARPU, ARPPU, CAC, LTV.
+- [PLG — Product-Led Growth](concepts/plg.md) — продукт сам себя продаёт.
+
+### Управление, приоритизация, фасилитация
+
+- [Фреймворки приоритизации](concepts/prioritization-frameworks.md) — MoSCoW, RICE, ICE, Kano, WSJF, ABC-XYZ.
+- [Модели команд](concepts/team-models.md) — Tuckman / DISC / PAEI / Belbin / Servant / McKinsey 7S.
+- [6 шляп Эдварда де Боно](concepts/six-thinking-hats.md) — facilitation-метод.
+- [SLA — Service Level Agreement](concepts/sla.md) — соглашение об уровне обслуживания.
 
 ### Документация
 

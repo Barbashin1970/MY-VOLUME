@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/playbooks/01-idea-formalization.md",
+                "file": "concepts/mom-test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-idea-formalization"
+              "title": "mom-test"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/playbooks/01-idea-formalization.md",
+                "file": "concepts/mom-test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для 01-idea-formalization"
+              "title": "Обратные ссылки для mom-test"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/playbooks/01-idea-formalization.md",
+                "file": "concepts/mom-test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из 01-idea-formalization"
+              "title": "Исходящие ссылки из mom-test"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/playbooks/01-idea-formalization.md",
+                "file": "concepts/mom-test.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура 01-idea-formalization"
+              "title": "Структура mom-test"
             }
           }
         ]
@@ -185,6 +185,28 @@
   },
   "active": "69edce5b637eb58b",
   "lastOpenFiles": [
+    "concepts/zadachny-podhod.md",
+    "concepts/bartle-psychotypes.md",
+    "concepts/anti-scope.md",
+    "concepts/team-models.md",
+    "concepts/aarrr-funnel.md",
+    "docs/playbooks/04-tz-and-gost-19.md",
+    "concepts/mom-test.md",
+    "concepts/six-thinking-hats.md",
+    "concepts/plg.md",
+    "concepts/prioritization-frameworks.md",
+    "concepts/moores-chasm.md",
+    "concepts/vpc.md",
+    "concepts/unit-economics.md",
+    "docs/playbooks/12-product-strategy-curriculum.md",
+    "docs/playbooks/11-support-operations.md",
+    "docs/playbooks/10-product-focus-mapping.md",
+    "concepts/sla.md",
+    "concepts/lean-canvas.md",
+    "concepts/jtbd.md",
+    "concepts/product-focus.md",
+    "docs/TZ.md",
+    "docs/playbooks/01-idea-formalization.md",
     "projects/active/demo-sigma/README.md",
     "projects/active/java-claude-test/README.md",
     "projects/active/stroy/README.md",
@@ -192,34 +214,12 @@
     "projects/active/java-claude-test",
     "projects/active/stroy",
     "projects/active/ai-sklad/README.md",
-    "knowledge/skills/discovery-interview.md",
-    "MOC.md",
-    "CLAUDE.md",
-    "docs/architecture/README.md",
-    "knowledge/lessons/README.md",
-    "knowledge/languages/README.md",
-    "meetings/README.md",
-    "assets/README.md",
-    "projects/active/ragraf/decisions.md",
-    "projects/active/ragraf/bugs.md",
-    "projects/active/ragraf/backlog.md",
-    "projects/active/ragraf/arc.md",
-    "projects/active/nsk-opendata-bot/README.md",
-    "projects/active/polinom-java/README.md",
-    "projects/active/polinom/README.md",
-    "projects/active/kniffel/README.md",
-    "projects/active/sofia/README.md",
-    "projects/active/gonka/README.md",
-    "projects/active/ragraf/README.md",
-    "projects/active/leyka/README.md",
     "projects/active/nsk-opendata-bot",
     "projects/active/polinom-java",
     "projects/active/polinom",
     "projects/active/kniffel",
     "projects/active/sofia",
     "projects/active/gonka",
-    "projects/active/ai-sklad",
-    "docs/decisions/adr-003-bilingual-readme.md",
-    "docs/decisions/adr-002-doc-set-per-project.md"
+    "projects/active/ai-sklad"
   ]
 }

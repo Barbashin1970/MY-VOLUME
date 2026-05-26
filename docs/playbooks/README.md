@@ -1,6 +1,6 @@
 ---
 title: docs/playbooks/
-description: 10 плейбуков жизненного цикла проекта — от идеи до роста.
+description: 13 плейбуков жизненного цикла проекта — от идеи до роста + мета-плейбуки.
 tags: [meta, docs, playbooks]
 ---
 
@@ -28,6 +28,9 @@ tags: [meta, docs, playbooks]
 | 7 — комплект ГОСТ-19 | [07-gost-19-doc-set](07-gost-19-doc-set.md) | LEYKA/docs/LEYKA_*_GOST19.md (5 файлов) |
 | 8 — README + лендинг | [08-readme-landing](08-readme-landing.md) | RAGRAF/README.md, POLINOM/README.md (билингвально) |
 | 9 — устав / отчёт / рост | [09-charter-reports-growth](09-charter-reports-growth.md) | LEYKA/SKILL-PROJECT-CHARTER-AND-REPORTS, NSK/IQ-roadmap |
+| **мета — Product Focus** | [10-product-focus-mapping](10-product-focus-mapping.md) | Концепт: [product-focus](../../concepts/product-focus.md) |
+| **постфаза — эксплуатация и ТП** | [11-support-operations](11-support-operations.md) | Обезличенный регламент SaaS-компании v2.04 + [sla](../../concepts/sla.md) |
+| **мета — 5 букв + 11 спринтов** | [12-product-strategy-curriculum](12-product-strategy-curriculum.md) | Курс «Стратегия развития продукта» v3.0 (обезличенный) + 10 концептов спринтов |
 
 ---
 

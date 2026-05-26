@@ -70,3 +70,42 @@ tags: [meta, concepts]
 | `meetings/...` | Прозвучал новый термин — заведи карточку |
 | `~/<PROJECT>/...` (код) | В коде встретил незнакомое имя из домена — кратко зафиксируй |
 | Книга / статья | Если применимо к твоей работе |
+
+---
+
+## Тематические группы
+
+### Методологическая база
+- [zadachny-podhod](zadachny-podhod.md) — задачный подход (Гончаров-Свириденко)
+- [tfs-anokhina](tfs-anokhina.md) — ТФС Анохина
+- [sigma-methodology](sigma-methodology.md) — Сигма-методология
+- [product-focus](product-focus.md) — Product Focus (российская гибкая методология PM)
+
+### Продуктовая стратегия и исследования
+- [jtbd](jtbd.md) — Jobs To Be Done
+- [vpc](vpc.md) — Value Proposition Canvas (Остервальдер)
+- [lean-canvas](lean-canvas.md) — 9-блочный канвас Эша Маурьи
+- [mom-test](mom-test.md) — правила интервью Роба Фитцпатрика
+- [bartle-psychotypes](bartle-psychotypes.md) — сегментация по мотивам, не по демографии
+- [moores-chasm](moores-chasm.md) — пропасть Мура между ранним и массовым рынком
+
+### Метрики и экономика
+- [aarrr-funnel](aarrr-funnel.md) — пиратская воронка метрик
+- [unit-economics](unit-economics.md) — TAM/SAM/SOM, ARPU, ARPPU, CAC, LTV
+
+### Бэклог и приоритизация
+- [prioritization-frameworks](prioritization-frameworks.md) — MoSCoW, RICE, ICE, Kano, WSJF, ABC-XYZ
+- [anti-scope](anti-scope.md) — список «что НЕ делаем»
+
+### Рост и фасилитация
+- [plg](plg.md) — Product-Led Growth
+- [six-thinking-hats](six-thinking-hats.md) — 6 шляп Эдварда де Боно
+
+### Управление и команды
+- [team-models](team-models.md) — Tuckman / DISC / PAEI / Belbin / Servant / McKinsey 7S
+- [sla](sla.md) — Service Level Agreement
+
+### Документация и финансы (российская специфика)
+- [gost-19](gost-19.md) — ЕСПД, стандарт документации ПО
+- [kosgu](kosgu.md) — статьи бюджета для гос/корп
+- [iq-roadmap](iq-roadmap.md) — NSK-модель роста системы

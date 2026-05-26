@@ -6,72 +6,104 @@ tags: [meta, moc]
 
 # MOC — Map of Content
 
-Это **главная карта** твоего графа знаний. В Obsidian работает как «домашняя
-страница». Здесь — только ссылки на важное, без содержания. Обновляй
-вручную, когда добавляешь по-настоящему ключевую заметку.
-
-> Если файл нужно искать чаще раза в месяц — он должен попасть сюда.
+Главная карта vault'а. В Obsidian работает как «домашняя страница».
+Здесь — только ссылки на важное, без содержания.
 
 ---
 
-## Проекты
+## 🚀 Жизненный цикл проекта (главное)
+
+**Мастер-плейбук:** [docs/playbooks/00-product-lifecycle.md](docs/playbooks/00-product-lifecycle.md)
+
+9 стадий с собственными плейбуками:
+
+1. [01 — Формализация идеи (IDEA.md, 6 вопросов)](docs/playbooks/01-idea-formalization.md)
+2. [02 — Поиск ниши и позиционирование](docs/playbooks/02-niche-positioning.md)
+3. [03 — ТЭО / НИР / экономика-маркетинг](docs/playbooks/03-nir-economics.md)
+4. [04 — Техническое задание (ГОСТ 19.201)](docs/playbooks/04-tz-and-gost-19.md)
+5. [05 — Архитектура (ARC.md, 18 секций)](docs/playbooks/05-architecture.md)
+6. [06 — Нарезка реализации (SKILL-NN-*.md)](docs/playbooks/06-skill-series.md)
+7. [07 — Комплект документации ГОСТ-19](docs/playbooks/07-gost-19-doc-set.md)
+8. [08 — README + лендинг](docs/playbooks/08-readme-landing.md)
+9. [09 — Устав / отчёт / IQ-roadmap / рост](docs/playbooks/09-charter-reports-growth.md)
+
+---
+
+## 📦 Проекты
 
 ### Активные
-- _добавляй сюда по мере создания_ — `[название](projects/active/<slug>/README.md)`
+
+| Проект | Категория | Стек | Эталон в |
+|--------|-----------|------|----------|
+| [LEYKA](projects/active/leyka/README.md) | A — заказной | FastAPI + React | Стек по умолчанию, полный комплект ГОСТ-19, КОСГУ/Устав |
+| [RAGRAF](projects/active/ragraf/README.md) | A — заказной | FastAPI + React + DuckDB | Задачный подход, SKILL-GOST-19, позиционирование |
+| [AI-SKLAD](projects/active/ai-sklad/README.md) | D — демо | Python static | IDEA.md / 6 вопросов |
+| [GONKA](projects/active/gonka/README.md) | B — pet | PWA Vite + React 19 | Серия SKILL-01…09 |
+| [SOFIA](projects/active/sofia/README.md) | B — pet | PWA | SKILL-структура |
+| [KNIFFEL](projects/active/kniffel/README.md) | B — pet | PWA | SKILL-структура |
+| [POLINOM](projects/active/polinom/README.md) | C — научно-инструментальный | Python CLI | Билингвальный README, sigma-методология |
+| [POLINOM-JAVA](projects/active/polinom-java/README.md) | C — научно-инструментальный | Java + JMH | Перенос правил Сигма на JVM |
+| [NSK_OpenData_Bot](projects/active/nsk-opendata-bot/README.md) | C — научно-инструментальный | Python bot | IQ-roadmap паттерн |
 
 ### Архив
 - _проекты, которые завершены или приостановлены_
 
 ---
 
-## Стек — что я использую
+## 🧭 Ключевые решения (ADR)
 
-- [Python](knowledge/languages/) — backend, скрипты
-- [TypeScript](knowledge/languages/) — frontend, иногда node
-- [Java](knowledge/languages/) — отдельный playground
-- [FastAPI + React + Vite](knowledge/stacks/) — рабочая лошадка для веб-проектов
-- [Vite + Zustand + Tailwind](knowledge/stacks/) — типовой фронт
+- [ADR-001 — Дефолтный стек для веб-проектов](docs/decisions/adr-001-default-stack.md) (FastAPI + React + Vite + Tailwind + TanStack Query + Zustand + SQLite)
+- [ADR-002 — Дефолтный комплект документации на проект](docs/decisions/adr-002-doc-set-per-project.md) (категории A/B/C/D)
+- [ADR-003 — Билингвальный README](docs/decisions/adr-003-bilingual-readme.md) (рус + англ)
 
----
-
-## Ключевые решения (ADR)
-
-- _добавляй сюда самые важные решения, которые объясняют, «почему так»_
-
-См. [docs/decisions/](docs/decisions/README.md)
+Все ADR: [docs/decisions/](docs/decisions/README.md)
 
 ---
 
-## Уроки и баги, которые нельзя повторять
+## 🧠 Концепты (глоссарий, разрастающийся в граф)
 
-См. [knowledge/lessons/](knowledge/lessons/README.md)
+### Методологическая база
 
-> Прочитай этот список **перед стартом нового проекта.** Это твой щит от
-> повторных ошибок.
+- [Задачный подход (Гончаров-Свириденко)](concepts/zadachny-podhod.md) — 4 компонента задачи. Базис RAGRAF.
+- [ТФС Анохина](concepts/tfs-anokhina.md) — 6 стадий деятельности.
+- [Сигма-методология](concepts/sigma-methodology.md) — полиномиальная сложность. Базис POLINOM.
 
----
+### Документация
 
-## Глоссарий — основные понятия
+- [ГОСТ-19 (ЕСПД)](concepts/gost-19.md) — российский стандарт документации ПО.
+- [Антископ](concepts/anti-scope.md) — список «что НЕ делаем».
 
-См. [concepts/](concepts/README.md)
+### Финансы и рост
 
----
+- [КОСГУ](concepts/kosgu.md) — статьи бюджета для гос/корп проектов.
+- [IQ-roadmap](concepts/iq-roadmap.md) — модель роста системы (NSK-стиль).
 
-## Skills — переиспользуемые рецепты
-
-См. [knowledge/skills/](knowledge/skills/README.md)
-
-> Это твои `SKILL-NN-*.md` из проектов, очищенные от проектной специфики
-> и пригодные для следующего раза.
+Все концепты: [concepts/](concepts/README.md)
 
 ---
 
-## Люди и команды
+## 📚 Knowledge — переиспользуемое знание
 
-См. [people/](people/README.md)
+Структура: [knowledge/README.md](knowledge/README.md)
+
+- [knowledge/languages/](knowledge/languages/) — идиомы языков
+- [knowledge/stacks/](knowledge/stacks/) — рабочие стеки (FastAPI+React, PWA, Java)
+- [knowledge/patterns/](knowledge/patterns/) — переносимые архитектурные приёмы
+- [knowledge/skills/](knowledge/skills/) — атомарные рецепты (Drag-and-Drop, Optimistic mutations, SHACL bridge)
+- [knowledge/tools/](knowledge/tools/) — внешние инструменты (Claude Code, Obsidian, Vercel)
+- [knowledge/lessons/](knowledge/lessons/) — **уроки, выученные на боль** (читай первым на старте нового проекта)
 
 ---
 
-## Встречи — недавние
+## 👥 Люди и встречи
 
-См. [meetings/](meetings/README.md)
+- [people/](people/README.md) — карточки коллег и заказчиков
+- [meetings/](meetings/README.md) — журнал встреч
+
+---
+
+## 🗂 Утилитарные папки
+
+- [templates/](templates/README.md) — шаблоны новых заметок
+- [inbox/](inbox/README.md) — быстрый сброс мыслей (разгребается раз в неделю)
+- [assets/](assets/README.md) — картинки, PDF

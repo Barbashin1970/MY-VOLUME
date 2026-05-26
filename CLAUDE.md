@@ -26,15 +26,37 @@ tags: [meta, claude]
 
 1. **[knowledge/lessons/](knowledge/lessons/)** — может, мы это уже сломали и
    починили. Не повторяй ошибок.
-2. **[knowledge/skills/](knowledge/skills/)** — есть ли готовый рецепт.
-3. **[knowledge/patterns/](knowledge/patterns/)** — есть ли архитектурный
+2. **[docs/playbooks/](docs/playbooks/)** — есть плейбук на эту стадию ЖЦ?
+3. **[knowledge/skills/](knowledge/skills/)** — есть ли готовый рецепт.
+4. **[knowledge/patterns/](knowledge/patterns/)** — есть ли архитектурный
    приём, который сюда ложится.
-4. **[docs/decisions/](docs/decisions/)** — есть ли принятое решение, которое
+5. **[docs/decisions/](docs/decisions/)** — есть ли принятое решение, которое
    ограничивает выбор.
-5. **[projects/active/](projects/active/)** — как мы делали это раньше.
-6. **[concepts/](concepts/)** — корректно ли я понял термины.
+6. **[projects/active/](projects/active/)** — как мы делали это раньше.
+7. **[concepts/](concepts/)** — корректно ли я понял термины.
 
 Только потом — общая эрудиция.
+
+## При старте нового проекта — обязательная процедура
+
+1. Прочитай **[docs/playbooks/00-product-lifecycle.md](docs/playbooks/00-product-lifecycle.md)** —
+   карта 9 стадий ЖЦ.
+2. Прочитай **[ADR-002 — комплект документации](docs/decisions/adr-002-doc-set-per-project.md)** —
+   определи категорию проекта (A/B/C/D).
+3. Открой плейбук стадии 1 — **[01-idea-formalization](docs/playbooks/01-idea-formalization.md)**.
+4. Просмотри **похожие проекты** в [projects/active/](projects/active/) —
+   используй их карточки как референс.
+5. Прочитай **[knowledge/lessons/](knowledge/lessons/)** — каких граблей
+   избегать (когда заведутся файлы).
+
+## Категории проектов (см. ADR-002)
+
+| Категория | Описание | Эталон | Документов |
+|-----------|----------|--------|------------|
+| **A** | Заказной коммерческий / грантовый | LEYKA, RAGRAF | 15+ |
+| **B** | Pet / learning / внутренний | GONKA, SOFIA, KNIFFEL | 4-6 |
+| **C** | Научно-инструментальный | POLINOM, NSK | 7-10 |
+| **D** | Демо для клиента | AI-SKLAD | 4-6 |
 
 ---
 

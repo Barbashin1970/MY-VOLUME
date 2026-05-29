@@ -7,7 +7,7 @@ category: D
 repo: ~/SOFIA
 deployed: https://sofia-europe.vercel.app/
 created: 2026-04-10
-updated: 2026-05-26
+updated: 2026-05-29
 ---
 
 # SOFIA — Арома София
@@ -83,7 +83,14 @@ SOFIA ≠ игра. Не переиспользуй из неё game-loop, AI-б
 паттерны. Общее с GONKA: только стек PWA + React + Vite. Доменная и
 UX-логика — полностью своя.
 
+## Go-to-Market и монетизация
+
+См. [go-to-market-ru.md](go-to-market-ru.md) — стратегия RU-first (трафик → продажа
+Аромашке), три возражения к 46-страничной концепции (`~/SOFIA/Концепция продукта
+«София».pdf`) и keyword-план под Яндекс Wordstat. Решение от 2026-05-29.
+
 ## Связанное
 
 - ADR: [adr-001-default-stack](../../../docs/decisions/adr-001-default-stack.md) — стек категории D
 - Похожий по категории: [ai-sklad](../ai-sklad/) — другой жанр демо
+- Метод keyword-отбора: [cws-idea-scouting](../cws-idea-scouting/README.md) + [gated-funnel-scoring](../../../knowledge/patterns/gated-funnel-scoring.md)

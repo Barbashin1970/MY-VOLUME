@@ -50,6 +50,7 @@ tags: [meta, moc]
 | [POLINOM](projects/active/polinom/README.md) | C — научно-инструментальный | Python CLI | Билингвальный README, sigma-методология |
 | [POLINOM-JAVA](projects/active/polinom-java/README.md) | C — научно-инструментальный | Java + JMH | Перенос правил Сигма на JVM |
 | [NSK_OpenData_Bot](projects/active/nsk-opendata-bot/README.md) | C — научно-инструментальный | Python bot | IQ-roadmap паттерн |
+| [CWS-IDEA-SCOUTING](projects/active/cws-idea-scouting/README.md) | B — внутренний инструмент | Claude Code Skill + Python | 9-гейтовая SEO-воронка отбора идеи CWS, scoring-таблица |
 
 ### Архив
 - _проекты, которые завершены или приостановлены_
@@ -124,7 +125,7 @@ tags: [meta, moc]
 
 - [knowledge/languages/](knowledge/languages/) — идиомы языков
 - [knowledge/stacks/](knowledge/stacks/) — рабочие стеки (FastAPI+React, PWA, Java)
-- [knowledge/patterns/](knowledge/patterns/) — переносимые архитектурные приёмы
+- [knowledge/patterns/](knowledge/patterns/) — переносимые архитектурные приёмы + **[gated-funnel-scoring](knowledge/patterns/gated-funnel-scoring.md)** (воронка гейтов + scoring-таблица для отбора кандидатов)
 - [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом) + **[ski-coding](knowledge/skills/ski-coding.md)** (методология соло-разработки с LLM, ноу-хау Олега)
 - [knowledge/tools/](knowledge/tools/) — внешние инструменты (Claude Code, Obsidian, Vercel)
 - [knowledge/lessons/](knowledge/lessons/) — **уроки, выученные на боль** (читай первым на старте нового проекта)

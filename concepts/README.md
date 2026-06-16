@@ -80,6 +80,7 @@ tags: [meta, concepts]
 - [tfs-anokhina](tfs-anokhina.md) — ТФС Анохина
 - [sigma-methodology](sigma-methodology.md) — Сигма-методология
 - [product-focus](product-focus.md) — Product Focus (российская гибкая методология PM)
+- [preconstruction](preconstruction.md) — preconstruction = pre-sales, одна фаза ЖЦ под двумя именами
 
 ### Продуктовая стратегия и исследования
 - [jtbd](jtbd.md) — Jobs To Be Done
@@ -88,6 +89,7 @@ tags: [meta, concepts]
 - [mom-test](mom-test.md) — правила интервью Роба Фитцпатрика
 - [bartle-psychotypes](bartle-psychotypes.md) — сегментация по мотивам, не по демографии
 - [moores-chasm](moores-chasm.md) — пропасть Мура между ранним и массовым рынком
+- [ai-necessity-criteria](ai-necessity-criteria.md) — нужен ли ИИ ВНУТРИ продукта: built-with-AI vs AI-inside
 
 ### Метрики и экономика
 - [aarrr-funnel](aarrr-funnel.md) — пиратская воронка метрик

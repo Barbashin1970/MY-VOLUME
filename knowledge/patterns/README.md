@@ -16,6 +16,8 @@ tags: [meta, knowledge, patterns]
 - `kanban-board-dnd.md` — Kanban с drag-and-drop (LEYKA).
 - `repository-with-fallback.md` — слой данных с приоритетами источников (RAGRAF: DuckDB → fixtures → upstream).
 - `immutable-snapshots.md` — версионирование через снапшоты (RAGRAF).
+- `live-bound-decision-regulation.md` — регламент-надстройка над живым ETL: вход → формула → switch по границам, данные кормит applier по param_id (RAGRAF: traffic-forecast, mobile-index).
+- `claim-the-layer-positioning.md` — позиционирование сложного продукта: заявить СЛОЙ, категория в eyebrow, H1 — глагол-результат, lineage вместо логотипов (RAGRAF hero).
 
 ## Чем паттерн отличается от skill
 

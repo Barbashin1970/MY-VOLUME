@@ -30,6 +30,7 @@ tags: [meta, moc]
 11. **[11 — Эксплуатация и техподдержка (постфаза)](docs/playbooks/11-support-operations.md)** — после релиза: роли ТП, SLA, статусы запросов, service desk
 12. **[12 — 5 букв + 11 спринтов](docs/playbooks/12-product-strategy-curriculum.md)** — современная PM-канва (Business / UX / Tech / Marketing / Management) и детальная последовательность работы с продуктом по 11 спринтам
 13. **[13 — управление качеством + ski-coding](docs/playbooks/13-quality-management.md)** — классический QA-цикл (Test Analysis / Design / Execution / Automation / Monitoring) × 9 стадий ЖЦ × адаптация под соло-режим
+14. **[14 — Курс «От идеи к прототипу с ИИ-агентом»](docs/playbooks/14-pair-programming-course-for-analysts.md)** — 10-урочный видеокурс для начинающих продукт-аналитиков: установка VS Code + ИИ-агент (GigaCode / Gemini / Copilot / Claude Code) → discovery → HTML/React/Python-прототип → Vercel-деплой → передача команде разработки
 
 ---
 
@@ -51,6 +52,7 @@ tags: [meta, moc]
 | [POLINOM-JAVA](projects/active/polinom-java/README.md) | C — научно-инструментальный | Java + JMH | Перенос правил Сигма на JVM |
 | [NSK_OpenData_Bot](projects/active/nsk-opendata-bot/README.md) | C — научно-инструментальный | Python bot | IQ-roadmap паттерн |
 | [CWS-IDEA-SCOUTING](projects/active/cws-idea-scouting/README.md) | B — внутренний инструмент | Claude Code Skill + Python | 9-гейтовая SEO-воронка отбора идеи CWS, scoring-таблица |
+| [PRECONSTRUCTION](projects/active/preconstruction/README.md) | B — внутренний инструмент | Claude Code Skill (RU/EN) | Пресейл-исследование строй/ИТ-идей: 5 этапов, потоки-агенты + аудит, вердикт «нужен ли ИИ ВНУТРИ» |
 
 ### Архив
 - _проекты, которые завершены или приостановлены_
@@ -75,6 +77,7 @@ tags: [meta, moc]
 - [ТФС Анохина](concepts/tfs-anokhina.md) — 6 стадий деятельности.
 - [Сигма-методология](concepts/sigma-methodology.md) — полиномиальная сложность. Базис POLINOM.
 - **[Product Focus](concepts/product-focus.md)** — гибкая методология продуктового менеджмента (4 модели). Дополняет 9 стадий ЖЦ.
+- [Preconstruction = Pre-Sales](concepts/preconstruction.md) — стройка-preconstruction и ИТ-pre-sales: одна фаза ЖЦ ДО реализации под двумя именами.
 
 ### Продуктовая стратегия и исследования
 
@@ -84,6 +87,7 @@ tags: [meta, moc]
 - [Mom Test](concepts/mom-test.md) — правила интервью Роба Фитцпатрика.
 - [Bartle-психотипы](concepts/bartle-psychotypes.md) — сегментация по мотивам.
 - [Пропасть Мура](concepts/moores-chasm.md) — кривая принятия инноваций.
+- [Критерии необходимости ИИ](concepts/ai-necessity-criteria.md) — нужен ли ИИ ВНУТРИ продукта: «создано С ПОМОЩЬЮ ИИ» vs «содержит ИИ ВНУТРИ».
 
 ### Метрики, экономика, рост
 
@@ -126,7 +130,7 @@ tags: [meta, moc]
 - [knowledge/languages/](knowledge/languages/) — идиомы языков
 - [knowledge/stacks/](knowledge/stacks/) — рабочие стеки (FastAPI+React, PWA, Java)
 - [knowledge/patterns/](knowledge/patterns/) — переносимые архитектурные приёмы + **[gated-funnel-scoring](knowledge/patterns/gated-funnel-scoring.md)** (воронка гейтов + scoring-таблица для отбора кандидатов)
-- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом) + **[ski-coding](knowledge/skills/ski-coding.md)** (методология соло-разработки с LLM, ноу-хау Олега)
+- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом) + **[ski-coding](knowledge/skills/ski-coding.md)** (методология соло-разработки с LLM, ноу-хау Олега) + **[preconstruction-research](knowledge/skills/preconstruction-research.md)** (указатель на пресейл-скиллы `preconstruction-ru`/`-en`: диалог → параллельные агенты → аудит → пресейл-отчёт)
 - [knowledge/tools/](knowledge/tools/) — внешние инструменты (Claude Code, Obsidian, Vercel)
 - [knowledge/lessons/](knowledge/lessons/) — **уроки, выученные на боль** (читай первым на старте нового проекта)
 

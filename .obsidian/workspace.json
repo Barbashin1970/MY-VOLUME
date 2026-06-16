@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/product-focus.md",
+                "file": "docs/playbooks/14-pair-programming-course-for-analysts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "product-focus"
+              "title": "14-pair-programming-course-for-analysts"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "99cf9cb09a739ced",
@@ -185,6 +186,20 @@
   },
   "active": "69edce5b637eb58b",
   "lastOpenFiles": [
+    "knowledge/skills/preconstruction-research.md",
+    "concepts/ai-necessity-criteria.md",
+    "concepts/preconstruction.md",
+    "projects/active/preconstruction/README.md",
+    "projects/active/preconstruction",
+    "knowledge/patterns/skill-to-textbook-chapter.md",
+    "knowledge/patterns/live-bound-decision-regulation.md",
+    "knowledge/lessons/wireguard-ios-allowedips-v6-breaks-tunnel.md",
+    "knowledge/lessons/amneziawg-cross-border-dpi-use-official-server.md",
+    "projects/active/sofia/bugs.md",
+    "knowledge/lessons/browser-translator-breaks-react-dom.md",
+    "templates/lesson.md",
+    "templates/meeting.md",
+    "concepts/product-focus.md",
     "concepts/aarrr-funnel.md",
     "Без названия.canvas",
     "2026-05-26.md",
@@ -199,18 +214,6 @@
     "concepts/lean-canvas.md",
     "concepts/kosgu.md",
     "concepts/jtbd.md",
-    "concepts/iq-roadmap.md",
-    "concepts/gost-19.md",
-    "concepts/ci-cd.md",
-    "concepts/anti-scope.md",
-    "docs/README.md",
-    "docs/TZ.md",
-    "docs/playbooks/13-quality-management.md",
-    "docs/playbooks/12-product-strategy-curriculum.md",
-    "docs/playbooks/11-support-operations.md",
-    "docs/playbooks/10-product-focus-mapping.md",
-    "docs/playbooks/09-charter-reports-growth.md",
-    "docs/playbooks/08-readme-landing.md",
     "projects/active/demo-sigma",
     "projects/active/java-claude-test",
     "projects/active/stroy",
@@ -219,7 +222,6 @@
     "projects/active/polinom",
     "projects/active/kniffel",
     "projects/active/sofia",
-    "projects/active/gonka",
-    "projects/active/ai-sklad"
+    "projects/active/gonka"
   ]
 }

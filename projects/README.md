@@ -93,6 +93,7 @@ projects/
 | nsk-opendata-bot | `~/NSK_OpenData_Bot/` | Бот по открытым данным Новосибирска, IQ-roadmap | ✅ |
 | polinom | `~/POLINOM/` | Sigma-методология полиномиальной сложности, sigma-audit CLI | ✅ |
 | polinom-java | `~/POLINOM-JAVA/` | Java-версия POLINOM, перенос правил на JVM | ✅ |
+| preconstruction | `~/PRECONSTRUCTION/` | Методология + 2 Claude Code скилла (RU/EN) для пресейл-исследования идей | ✅ |
 | ragraf | `~/RAGRAF/` | Платформа замкнутого контура «датчик ↔ регламент ↔ задача» | ✅ |
 | sofia | `~/SOFIA/` | **Арома София** — ароматерапевт «Цветок Мудрости» (Юнг + нумерология), Vercel | ✅ |
 | stroy | `~/STROY/` | ИИ-помощник по охране труда, Streamlit + Text-to-SQL поверх RDF | ✅ |

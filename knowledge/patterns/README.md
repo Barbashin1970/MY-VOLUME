@@ -18,6 +18,8 @@ tags: [meta, knowledge, patterns]
 - `immutable-snapshots.md` — версионирование через снапшоты (RAGRAF).
 - `live-bound-decision-regulation.md` — регламент-надстройка над живым ETL: вход → формула → switch по границам, данные кормит applier по param_id (RAGRAF: traffic-forecast, mobile-index).
 - `claim-the-layer-positioning.md` — позиционирование сложного продукта: заявить СЛОЙ, категория в eyebrow, H1 — глагол-результат, lineage вместо логотипов (RAGRAF hero).
+- `horizontal-engine-vertical-packs.md` — одно ядро + сменные регламент-паки; не зарываться в одну вертикаль; выбор вектора по «где необходимы × где легко бить автоматизацию» (RAGRAF: 3 вектора).
+- `verify-dont-orchestrate.md` — внешний rule-движок не в путь реакции, только в путь пост-фактум проверки/аудита; оркестрацию отдай встроенной автоматизации трекера (Redmine/d0sl → Яндекс Трекер).
 
 ## Чем паттерн отличается от skill
 

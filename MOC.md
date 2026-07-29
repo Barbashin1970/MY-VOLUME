@@ -130,7 +130,7 @@ tags: [meta, moc]
 - [knowledge/languages/](knowledge/languages/) — идиомы языков
 - [knowledge/stacks/](knowledge/stacks/) — рабочие стеки (FastAPI+React, PWA, Java)
 - [knowledge/patterns/](knowledge/patterns/) — переносимые архитектурные приёмы + **[gated-funnel-scoring](knowledge/patterns/gated-funnel-scoring.md)** (воронка гейтов + scoring-таблица для отбора кандидатов)
-- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом) + **[ski-coding](knowledge/skills/ski-coding.md)** (методология соло-разработки с LLM, ноу-хау Олега) + **[preconstruction-research](knowledge/skills/preconstruction-research.md)** (указатель на пресейл-скиллы `preconstruction-ru`/`-en`: диалог → параллельные агенты → аудит → пресейл-отчёт)
+- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом) + **[ski-coding](knowledge/skills/ski-coding.md)** (методология соло-разработки с LLM, ноу-хау Олега) + **[preconstruction-research](knowledge/skills/preconstruction-research.md)** (указатель на пресейл-скиллы `preconstruction-ru`/`-en`: диалог → параллельные агенты → аудит → пресейл-отчёт) + **[adversarial-citation-factcheck](knowledge/skills/adversarial-citation-factcheck.md)** (проверка списка научных ссылок per-source агентами со скептическим дефолтом и сырым arXiv API)
 - [knowledge/tools/](knowledge/tools/) — внешние инструменты (Claude Code, Obsidian, Vercel)
 - [knowledge/lessons/](knowledge/lessons/) — **уроки, выученные на боль** (читай первым на старте нового проекта)
 

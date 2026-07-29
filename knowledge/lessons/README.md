@@ -36,7 +36,7 @@ tags: [meta, knowledge, lessons]
 
 ## Примеры на основе твоих проектов
 
-(заглушки — заведи их по мере работы)
+- `stroytech-vendor-no-cash-inkind-pilot.md` — вендор не платит, но даёт бесплатный доступ; заходить безвозмездным академ-пилотом с взаимностью; IP держишь ты, вуз = научный партнёр (RAGRAF ↔ ai-bim/Plan-R).
 
 - `duckdb-rlock-vs-lock.md` — RAGRAF: обычный `threading.Lock` дедлочит при
   `init_db → seed → save()`. Нужен `RLock` (reentrant).

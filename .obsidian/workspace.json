@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4f1ee2dfb6cc4e54",
+        "id": "cd8341e3ff71090f",
         "type": "tabs",
         "children": [
           {
-            "id": "69edce5b637eb58b",
+            "id": "8aa20ea98fada9bc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/playbooks/14-pair-programming-course-for-analysts.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "14-pair-programming-course-for-analysts"
+              "title": "Новая вкладка"
             }
           }
         ]
@@ -184,8 +180,10 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "69edce5b637eb58b",
+  "active": "8aa20ea98fada9bc",
   "lastOpenFiles": [
+    "Без названия 1.canvas",
+    "docs/playbooks/14-pair-programming-course-for-analysts.md",
     "knowledge/skills/preconstruction-research.md",
     "concepts/ai-necessity-criteria.md",
     "concepts/preconstruction.md",
@@ -212,8 +210,6 @@
     "concepts/moores-chasm.md",
     "concepts/mom-test.md",
     "concepts/lean-canvas.md",
-    "concepts/kosgu.md",
-    "concepts/jtbd.md",
     "projects/active/demo-sigma",
     "projects/active/java-claude-test",
     "projects/active/stroy",

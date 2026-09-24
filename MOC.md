@@ -42,6 +42,7 @@ tags: [meta, moc]
 |--------|-----------|------|----------|
 | [LEYKA](projects/active/leyka/README.md) | A — заказной | FastAPI + React | Стек по умолчанию, полный комплект ГОСТ-19, КОСГУ/Устав |
 | [RAGRAF](projects/active/ragraf/README.md) | A — заказной | FastAPI + React + DuckDB | Задачный подход, SKILL-GOST-19, позиционирование |
+| [АРХИ](projects/active/archi-nsu/README.md) | A — заказной | FastAPI + ваниль без сборки | Комплект ЕСПД 11/11 + отчёт о НИР, сторожа чисел, режим показа, навык отбора проверок |
 | [AI-SKLAD](projects/active/ai-sklad/README.md) | D — демо | Python static | IDEA.md / 6 вопросов |
 | [SOFIA — Арома София](projects/active/sofia/README.md) | D — продакшен-демо | React+Vite SVG | Ароматерапевт «Цветок Мудрости» (Юнг+нумерология), Vercel |
 | [STROY](projects/active/stroy/README.md) | D — демо | Python Streamlit | Text-to-SQL по охране труда, RDF-онтология |
@@ -130,7 +131,7 @@ tags: [meta, moc]
 - [knowledge/languages/](knowledge/languages/) — идиомы языков
 - [knowledge/stacks/](knowledge/stacks/) — рабочие стеки (FastAPI+React, PWA, Java)
 - [knowledge/patterns/](knowledge/patterns/) — переносимые архитектурные приёмы + **[gated-funnel-scoring](knowledge/patterns/gated-funnel-scoring.md)** (воронка гейтов + scoring-таблица для отбора кандидатов)
-- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом) + **[ski-coding](knowledge/skills/ski-coding.md)** (методология соло-разработки с LLM, ноу-хау Олега) + **[preconstruction-research](knowledge/skills/preconstruction-research.md)** (указатель на пресейл-скиллы `preconstruction-ru`/`-en`: диалог → параллельные агенты → аудит → пресейл-отчёт) + **[adversarial-citation-factcheck](knowledge/skills/adversarial-citation-factcheck.md)** (проверка списка научных ссылок per-source агентами со скептическим дефолтом и сырым arXiv API)
+- [knowledge/skills/](knowledge/skills/) — атомарные рецепты + **[discovery-interview](knowledge/skills/discovery-interview.md)** (опрос Олега перед новым проектом) + **[ski-coding](knowledge/skills/ski-coding.md)** (методология соло-разработки с LLM, ноу-хау Олега) + **[preconstruction-research](knowledge/skills/preconstruction-research.md)** (указатель на пресейл-скиллы `preconstruction-ru`/`-en`: диалог → параллельные агенты → аудит → пресейл-отчёт) + **[adversarial-citation-factcheck](knowledge/skills/adversarial-citation-factcheck.md)** (проверка списка научных ссылок per-source агентами со скептическим дефолтом и сырым arXiv API) + **[publish-yandex-games](knowledge/skills/publish-yandex-games.md)** (право на публикацию, обязательный SDK, `base:'./'`, отключение SW, чек-лист модерации для статичной PWA) + **[mermaid-vertical-diagrams](knowledge/skills/mermaid-vertical-diagrams.md)** (схемы рисуются сверху вниз: горизонтальная упирается в ширину колонки и ужимается до нечитаемого; ловушка подграфов)
 - [knowledge/tools/](knowledge/tools/) — внешние инструменты (Claude Code, Obsidian, Vercel)
 - [knowledge/lessons/](knowledge/lessons/) — **уроки, выученные на боль** (читай первым на старте нового проекта)
 

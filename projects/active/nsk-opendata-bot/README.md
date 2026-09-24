@@ -62,6 +62,9 @@ data.gov.ru, openbudget.mfnso.ru, Яндекс.Расписания, 2GIS, ГИ�
 
 ## Связанное
 
+- Урок: [seed-placeholders-block-real-data-import](../../../knowledge/lessons/seed-placeholders-block-real-data-import.md)
+  — стартовая сеялка-заглушка заняла первичные ключи и заблокировала импорт
+  реальных суток из бэкапа (2026-08-19).
 - Концепт: [iq-roadmap](../../../concepts/iq-roadmap.md)
 - Плейбук: [09-charter-reports-growth](../../../docs/playbooks/09-charter-reports-growth.md) §C
 - Использован как референс в: [ragraf](../ragraf/) (Studio editor)

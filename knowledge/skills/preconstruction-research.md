@@ -1,14 +1,15 @@
 ---
 title: Preconstruction research — пресейл-исследование идеи многопоточными агентами
-description: Skill-указатель на Claude Code скиллы preconstruction-ru/-en в ~/PRECONSTRUCTION — диалог-скоупинг → параллельные потоки-агенты → адверсариальный аудит → единый пресейл-отчёт с питчем и вердиктом по ИИ. Код живёт в проекте; здесь — когда/зачем/как.
+description: Skill-указатель на навыки preconstruction-ru/-en в ~/PRECONSTRUCTION — диалог-скоупинг → потоки-исследователи → скептический аудит → единый пресейл-отчёт с питчем и вердиктом по ИИ. Ставятся плагином Claude Code, архивами для claude.ai и Perplexity, установщиком. Код живёт в проекте; здесь — когда/зачем/как.
 tags: [skill, preconstruction, presale, research, multi-agent, ai-necessity, ru, en]
-origin: projects/active/preconstruction (Claude Code скиллы preconstruction-ru / preconstruction-en)
+origin: projects/active/preconstruction (навыки preconstruction-ru / preconstruction-en)
 adapted_for: пресейл строительных и ИТ-для-стройки идей (методология «5 этапов пресейла с ИИ», мини-хакатон НГАУДИ)
 created: 2026-06-10
-updated: 2026-06-10
+updated: 2026-11-02
 related:
   - knowledge/skills/discovery-interview.md
   - knowledge/skills/ski-coding.md
+  - knowledge/lessons/when-to-use-breaks-claude-ai-upload.md
   - concepts/preconstruction.md
   - concepts/ai-necessity-criteria.md
   - concepts/anti-scope.md
@@ -17,16 +18,18 @@ related:
 
 # Skill: Preconstruction research
 
-> **Это указатель, а не копия.** Реальные скиллы живут в проекте `~/PRECONSTRUCTION`; vault не
+> **Это указатель, а не копия.** Реальные навыки живут в проекте `~/PRECONSTRUCTION`; vault не
 > дублирует код — описывает когда/зачем/как и куда смотреть. Правишь поведение — правь в проекте.
 
 ## Где живёт сам skill
 
-- `~/PRECONSTRUCTION/.claude/skills/preconstruction-ru/SKILL.md` — русская версия (полнее).
-- `~/PRECONSTRUCTION/.claude/skills/preconstruction-en/SKILL.md` — английское зеркало.
-- `.../references/` у каждого — 4 файла: `interview-protocol`, `research-roles`,
-  `audit-checklist`, `report-template`.
-- `~/PRECONSTRUCTION/knowledge-base/` (RU) и `knowledge-base-en/` (EN) — методология как учебник.
+- `~/PRECONSTRUCTION/skills/preconstruction-ru/SKILL.md` — русская версия;
+  `~/PRECONSTRUCTION/skills/preconstruction-en/SKILL.md` — английское зеркало.
+  `.claude/skills/` проекта — симлинки на них.
+- `.../references/` у каждого — 5 файлов: `interview-protocol`, `research-roles`,
+  `ai-necessity-criteria`, `audit-checklist`, `report-template`; `.../examples/` — 3 эталона.
+- `~/PRECONSTRUCTION/knowledge-base/` (RU) и `knowledge-base-en/` (EN) — методология как учебник;
+  навыку она не нужна, навык самодостаточен.
 
 ## Когда применять
 
@@ -41,15 +44,14 @@ related:
 
 ## Что делает (4 фазы)
 
-- **Фаза 0 — диалог/скоупинг:** Restate + 2–3 волны `AskUserQuestion`, выбор глубины
-  «быстрая»/«полная», антископ, нормативный контекст РФ. См. `references/interview-protocol.md`.
-- **Фаза 1 — параллельные потоки-агенты** (в одном сообщении): A Бизнес-аналитик (этапы 1–2),
-  B Маркетолог (этап 2), C Системный аналитик ИИ · техэкспертиза (этап 3), D Системный аналитик
-  ИИ · применимость ИИ (этап 4). См. `references/research-roles.md`.
-- **Фаза 2 — адверсариальный аудит:** числа/источники, противоречия между потоками, пробелы,
-  перепроверка вердикта по ИИ. См. `references/audit-checklist.md`.
-- **Фаза 3 — сведение** в `research/<слаг>-YYYY-MM-DD.md`: executive summary, разбор 5 этапов,
-  раздел «Применимость ИИ», питч, риски, журнал аудита. См. `references/report-template.md`.
+- **Фаза 0 — диалог/скоупинг:** Restate + 2–3 волны вопросов, выбор глубины
+  «быстрая»/«полная», антископ, нормативный контекст РФ.
+- **Фаза 1 — потоки-исследователи:** A Бизнес-аналитик (этапы 1–2), B Маркетолог (этап 2),
+  C Системный аналитик · техэкспертиза (этап 3), D Системный аналитик · применимость ИИ (этап 4).
+  Ограничения работы (без подагентов, бюджет поиска) и пометки провенанса у каждого утверждения.
+- **Фаза 2 — скептический аудит:** числа/источники, провенанс главного факта, противоречия
+  между потоками, пробелы, перепроверка вердикта по ИИ.
+- **Фаза 3 — сведение** в `research/<слаг>-YYYY-MM-DD.md` (в чатах — файлом или ответом).
 
 Методология = **5 этапов пресейла**: идентификация → бизнес-анализ → техэкспертиза →
 [применимость ИИ](../../concepts/ai-necessity-criteria.md) → упаковка.
@@ -59,11 +61,15 @@ related:
 > ИИ — инструмент **исследования**, а не обязательный компонент продукта. Разделяй «создано
 > С ПОМОЩЬЮ ИИ» (вайб-кодинг) и «содержит ИИ ВНУТРИ» (ML в проде). Честность важнее «крутости ИИ».
 
-## Как запустить
+## Как поставить и запустить
 
-Открой `~/PRECONSTRUCTION` в Claude Code → вызови `/preconstruction-ru` (или `/preconstruction-en`
-по языку отчёта) → «проработай идею: <описание>». Скилл сам ведёт диалог и запускает агентов.
-Никакого ручного кода здесь.
+- **Claude Code, любая ОС:** `/plugin install preconstruction --marketplace Barbashin1970/PRECONSTRUCTION`
+  → навыки `/preconstruction:preconstruction-ru` и `/preconstruction:preconstruction-en`.
+- **claude.ai / приложение Claude:** архив `zip/claude/…`; **Perplexity:** архив `zip/perplexity/…`.
+- **Codex и другие агенты:** `install.sh` / `install.ps1` → `~/.claude/skills`, `~/.agents/skills`.
+- В самом `~/PRECONSTRUCTION` навыки видны и без установки: `/preconstruction-ru`.
+
+Дальше — «проработай идею: <описание>». Навык сам ведёт диалог и запускает потоки.
 
 ## Чем отличается от discovery-interview
 
@@ -78,15 +84,19 @@ related:
 
 ## Известные подводные камни
 
-- Параллельные `Agent`-вызовы должны идти в **одном** сообщении, иначе нет реальной параллельности.
-- Не путай глубину: «быстрая» (≈4 потока) vs «полная» (+ deep-research + аудит в 2 голоса).
-- Дату в имени файла отчёта не выдумывай — спроси у пользователя или оставь плейсхолдер.
-- `knowledge-base/` русскоязычная, `knowledge-base-en/` — для иностранных студентов.
+- Параллельные `Agent`-вызовы должны идти в **одном** сообщении, иначе нет реальной параллельности;
+  где `Agent` нет (claude.ai, Perplexity), потоки идут по очереди — фазы не пропускаются.
+- Не путай глубину: «быстрая» (≈4 потока) vs «полная» (+ глубокий поиск + аудит в 2 голоса).
+- Дату в имени файла отчёта не выдумывай — бери из среды или спроси.
+- Шапка `SKILL.md` — только шесть полей спецификации, описание до 1024 байт: иначе отказ
+  claude.ai или Perplexity ([урок](../lessons/when-to-use-breaks-claude-ai-upload.md)).
+  После правки навыка — `python3 tools/build_zips.py` и `python3 tools/check.py`.
 - Это исследовательская фаза — **не писать код продукта**.
 
 ## Связанное
 
 - Skill: [discovery-interview](discovery-interview.md) — родственный интервью-паттерн (сиблинг)
 - Skill: [ski-coding](ski-coding.md) — следующий шаг, если решено делать прототип
+- Урок: [when-to-use-breaks-claude-ai-upload](../lessons/when-to-use-breaks-claude-ai-upload.md)
 - Концепты: [preconstruction](../../concepts/preconstruction.md), [ai-necessity-criteria](../../concepts/ai-necessity-criteria.md), [anti-scope](../../concepts/anti-scope.md)
 - Проект: [projects/active/preconstruction](../../projects/active/preconstruction/README.md)

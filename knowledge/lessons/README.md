@@ -312,6 +312,10 @@ tags: [meta, knowledge, lessons]
 - [`unanchored-grep-counts-docstring-example.md`](unanchored-grep-counts-docstring-example.md) — РАГРАФ: два документа с командами назвали 252 и 251 обработчик; команда без `^` засчитала пример в строке документации; конструкции кода считают привязанным образцом или по AST, две цифры одного утверждения сверяют списками совпадений.
 - [`guard-scope-list-does-not-grow-with-delivery.md`](guard-scope-list-does-not-grow-with-delivery.md) — РАГРАФ: сторож терминов перечнем каталогов охранял код и комплекты; книги переехали в поставку и вышли на открытую страницу мимо него; охват сторожа — из реестра поставки, новый каталог — пересмотр перечней всех сторожей.
 
+Уроки из упаковки навыков PRECONSTRUCTION под требования Anthropic (02.11.2026):
+
+- [`when-to-use-breaks-claude-ai-upload.md`](when-to-use-breaks-claude-ai-upload.md) — PRECONSTRUCTION ↔ NSU-AI-SKILLS, PROMPT-Professor: поле `when_to_use`, которым уложили русские описания в 1024 байта Perplexity, понимает только Claude Code — валидатор Anthropic отвергает такие навыки для claude.ai и Skills API; одна шапка, годная везде, — шесть полей спецификации, описание до 1024 байт, сторож на допустимые поля и `quick_validate.py` на распакованном архиве.
+
 ## Жанры уроков
 
 | Жанр | Пример | Тег |

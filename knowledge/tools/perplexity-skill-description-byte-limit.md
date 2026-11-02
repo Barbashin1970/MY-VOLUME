@@ -1,9 +1,9 @@
 ---
 title: Perplexity меряет description навыка в байтах — русское описание упирается в предел вдвое раньше
-description: "Загрузка навыков в Perplexity падала с «description exceeds maximum length of 1024 characters». По знакам проходили девять навыков из десяти, по байтам — ровно один, и принят был именно он. Предел считается в байтах (Go, len(строки)), кириллица в UTF-8 весит два байта на букву, значит для русского текста потолок около 512 знаков. Выход: короткое description, а хвост ключевых слов в поле when_to_use — Claude учитывает его при отборе наравне с описанием."
+description: "Загрузка навыков в Perplexity падала с «description exceeds maximum length of 1024 characters». По знакам проходили девять навыков из десяти, по байтам — ровно один, и принят был именно он. Предел считается в байтах (Go, len(строки)), кириллица в UTF-8 весит два байта на букву, значит для русского текста потолок около 512 знаков. Выход: короткое description, а хвост ключевых слов в поле when_to_use — Claude учитывает его при отборе наравне с описанием. Дополнение 2026-11-02: when_to_use понимает только Claude Code — claude.ai, Skills API и package_skill.py шапку с ним отвергают; для навыка, который грузят и в claude.ai, ключевые слова держат в самом описании до 1024 байт."
 tags: [tool, claude-code, skills, agents]
 created: 2026-10-15
-updated: 2026-10-15
+updated: 2026-11-02
 ---
 
 # Perplexity: предел описания навыка — 1024 байта, а не знака
@@ -58,6 +58,25 @@ when_to_use: "Ключевые слова: состав комплекта ЕС�
 Ни одно ключевое слово не теряется, и текст живёт в одном месте — подменять
 описание при сборке архива не нужно.
 
+> ⚠️ **Только если навык не уезжает в claude.ai.** `when_to_use` — расширение Claude Code.
+> claude.ai, Skills API и `package_skill.py` допускают в шапке лишь `name`, `description`,
+> `license`, `compatibility`, `metadata`, `allowed-tools` и на любом другом поле падают:
+> «Unexpected key(s) in SKILL.md frontmatter: when_to_use». См. раздел ниже.
+
+## Дополнение 2026-11-02: шапка, годная и для Perplexity, и для claude.ai
+
+Проверка валидатором Anthropic (`quick_validate.py` из навыка skill-creator) показала:
+навыки `~/NSU-AI-SKILLS` и `~/PROMPT-Professor` с полем `when_to_use` claude.ai не примет.
+Пересечение требований обеих сред:
+
+* описание — до **1024 байт** целиком, ключевые слова — в нём самом (русское описание
+  около 480 знаков плюс английские ключевые слова однобайтовые);
+* в шапке — только шесть полей спецификации; значения — одной строкой в двойных кавычках;
+* сторож проверяет и байты, и состав полей.
+
+Так сделан `~/PRECONSTRUCTION` (версия 1.1.0, `tools/check.py`). Подробно — урок
+[when-to-use-breaks-claude-ai-upload.md](../lessons/when-to-use-breaks-claude-ai-upload.md).
+
 ## Два других предела той же среды
 
 * **100 файлов на архив** — не жмёт даже для навыка с образцами (самый крупный
@@ -72,3 +91,5 @@ when_to_use: "Ключевые слова: состав комплекта ЕС�
   и раздел README «Загрузка в чужие среды».
 - Почему архив нельзя собирать мышью:
   [finder-zip-ships-ignored-files.md](../lessons/finder-zip-ships-ignored-files.md)
+- Почему `when_to_use` не годится для архивов claude.ai:
+  [when-to-use-breaks-claude-ai-upload.md](../lessons/when-to-use-breaks-claude-ai-upload.md)

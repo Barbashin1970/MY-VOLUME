@@ -2,7 +2,7 @@
 title: Bugs & Fixes — RAGRAF
 description: Локальный журнал багов и фиксов RAGRAF. То, что применимо везде — промоутится в knowledge/lessons/.
 tags: [project, ragraf, bugs]
-updated: 2026-05-26
+updated: 2026-10-30
 ---
 
 # RAGRAF — баги и фиксы
@@ -71,6 +71,8 @@ HTML5 DnD (`onDragOver`, `onDrop` на `<ReactFlow>`). `@dnd-kit` тут
 
 **Применимо?** ✅ ДА. [knowledge/lessons/react-flow-native-dnd.md] кандидат.
 
+**31.10.2026.** След отвергнутого `@dnd-kit` снят в коммите `3e24386` (30.10.2026): пакеты пять месяцев стояли в зависимостях без единого импорта. Урок о самом следе — [changed-decision-leaves-trace-in-dependencies.md](../../../knowledge/lessons/changed-decision-leaves-trace-in-dependencies.md).
+
 ---
 
 ## Промоутирование в knowledge/lessons/
@@ -85,3 +87,49 @@ HTML5 DnD (`onDragOver`, `onDrop` на `<ReactFlow>`). `@dnd-kit` тут
 
 Заведи их, когда будешь стартовать следующий проект с DuckDB или
 React Flow.
+
+---
+
+## 2026-10-30 — Заведено в knowledge/lessons/ после сверки книги с изделием
+
+Книгу «Системный аналитик в эпоху гибридного ИИ» (`docs/COURSE-SYSTEM-ANALYST-V1.md`)
+сверяли с кодом РАГРАФ по частям; попутно собраны случаи, применимые вне проекта.
+По решению Олега (30.10.2026) заведены все:
+
+- [x] [react-flow-split-change-callbacks-overwrite-each-other.md](../../../knowledge/lessons/react-flow-split-change-callbacks-overwrite-each-other.md) — висячие связи после Backspace (`f3adc42`, 04.09.2026)
+- [x] [zod-strips-unknown-keys-and-crashes-on-new-enum.md](../../../knowledge/lessons/zod-strips-unknown-keys-and-crashes-on-new-enum.md) — три тихие потери полей и два пустых экрана
+- [x] [defensive-overflow-hidden-and-guard-that-locked-the-defect.md](../../../knowledge/lessons/defensive-overflow-hidden-and-guard-that-locked-the-defect.md) — меню роли обрезано (`7fc5d64`, 26.09.2026)
+- [x] [draft-autosave-written-but-never-read.md](../../../knowledge/lessons/draft-autosave-written-but-never-read.md) — черновик потока без читателя (не починено)
+- [x] [artifact-excluded-from-image-looks-unwritten.md](../../../knowledge/lessons/artifact-excluded-from-image-looks-unwritten.md) — «0 из 11» на проде (`5f8c0ff`, 26.09.2026)
+- [x] [two-adr-registries-make-references-ambiguous.md](../../../knowledge/lessons/two-adr-registries-make-references-ambiguous.md) — два реестра решений (не починено)
+- [x] [global-unit-table-diverges-from-source-data.md](../../../knowledge/lessons/global-unit-table-diverges-from-source-data.md) — снег в метрах против сантиметров (`fa61b77`, `5188893`)
+- [x] [foreign-api-contract-drifts-silently.md](../../../knowledge/lessons/foreign-api-contract-drifts-silently.md) — `/api/v1/api/tasks` и `status` вместо `status_filter`
+- [x] [create-table-if-not-exists-skips-new-columns.md](../../../knowledge/lessons/create-table-if-not-exists-skips-new-columns.md) — 18 дней без записи опросов (`5188893`, 27.10.2026)
+- [x] второй случай в [document-promise-needs-a-guard.md](../../../knowledge/lessons/document-promise-needs-a-guard.md) — 460 `bg-stone-*` при запрете дизайн-системы
+
+---
+
+## 2026-10-31 — Заведено в knowledge/lessons/ при выкладке книг на страницу документации
+
+Курс РАГРАФ-V1, пособие системного аналитика и учебник Flow DSL выложены
+на страницу `/documentation` с печатью в PDF. Коммиты: `6939e9c`, `417592a`, `e520f68`.
+Разбор — `docs/KNIGI-NA-STRANICE-DOKUMENTACII-RAZBOR.md` в RAGRAF. Заведено по просьбе Олега:
+
+- [x] [heading-anchor-rule-must-match-github.md](../../../knowledge/lessons/heading-anchor-rule-must-match-github.md) — своё правило якорей против GitHub: оглавление на 243 ссылки молчало бы на странице
+- [x] [registry-copy-of-document-edition-drifts.md](../../../knowledge/lessons/registry-copy-of-document-edition-drifts.md) — ФРЕЙМ-35: редакция 6 в шапке, 5 в перечне страницы
+- [x] [changed-decision-leaves-trace-in-dependencies.md](../../../knowledge/lessons/changed-decision-leaves-trace-in-dependencies.md) — `@dnd-kit` из образца LEYKA пережил смену решения
+- [x] [published-page-ignored-document-distribution-clause.md](../../../knowledge/lessons/published-page-ignored-document-distribution-clause.md) — оговорку «не публикуется» нашли после пуша
+- [x] второй случай в [artifact-excluded-from-image-looks-unwritten.md](../../../knowledge/lessons/artifact-excluded-from-image-looks-unwritten.md) — книги в `docs/`; сторож `COPY` заведён
+
+---
+
+## 2026-10-31 — Заведено при выкладке «Справочника строителя умного города»
+
+Словарь сверен с изделием тремя проверками по частям (166 находок) и выложен книгой на страницу
+`/documentation`; послойная модель — в РАГРАФ-ФРЕЙМ-13. Коммит `47f0419`, разбор —
+`docs/ARHITEKTURA-I-SPRAVOCHNIK-RAZBOR.md` в RAGRAF. Заведено по просьбе Олега:
+
+- [x] [unanchored-grep-counts-docstring-example.md](../../../knowledge/lessons/unanchored-grep-counts-docstring-example.md) — 252 против 251 обработчика: пример в строке документации `kappa.py`
+- [x] [guard-scope-list-does-not-grow-with-delivery.md](../../../knowledge/lessons/guard-scope-list-does-not-grow-with-delivery.md) — сторож терминов не видит книги поставки (не починено, в бэклоге)
+- [x] паттерн [verify-by-parts-then-splice.md](../../../knowledge/patterns/verify-by-parts-then-splice.md) — сверка по частям и склейка
+

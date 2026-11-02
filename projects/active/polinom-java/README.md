@@ -5,9 +5,10 @@ tags: [project, stack/java, status/active, category/C]
 status: active
 category: C
 repo: ~/POLINOM-JAVA
+deployed: https://polinom-java.up.railway.app/
 related_repo: https://github.com/Barbashin1970/POLINOM-JAVA
 created: 2026-03-15
-updated: 2026-05-26
+updated: 2026-10-31
 related:
   - concepts/sigma-methodology.md
   - projects/active/polinom/
@@ -16,6 +17,10 @@ related:
 # POLINOM-JAVA
 
 > **Где код:** `~/POLINOM-JAVA/`
+> **Playground:** https://polinom-java.up.railway.app/ — аудит Java-проекта из публичного
+> GitHub-репозитория: 12 детекторов, 7 классов атак. Один контейнер на Railway:
+> анализатор sigma-java (jar), FastAPI и Next.js 14 (`web-playground/`).
+> **На портфолио:** карточка Polinom-Java в каталоге, «Наука и R&D» (с 2026-10-31).
 > **Что это:** Java-вариант POLINOM. Тестирует, как правила
 > Сигма-методологии переносятся на JVM-стек.
 

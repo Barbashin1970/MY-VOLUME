@@ -100,6 +100,8 @@
 
 ## Skill: RAGU GraphRAG integration
 
+> ⚠ **Исторический рецепт.** От RAGU отказались: интеграция удалена 22.05.2026, пакет — 06.09.2026. Его модель работает только на Windows, проверяли упрощённую версию; графы по регламенту РАГРАФ строит сам, на своём стеке. Подробнее — в [README.md](README.md), раздел «Почему без RAGU».
+
 **Применение:** фоновый сервис для (1) построения графа знаний из текстов регламентов, (2) семантического поиска, (3) извлечения сущностей и связей.
 
 Установка: `pip install graph_ragu`. Импорты:
@@ -133,7 +135,7 @@ backend/app/
 └── main.py
 ```
 
-Стек: `fastapi`, `uvicorn[standard]`, `pydantic>=2`, `httpx` (для upstream), `rdflib`, `pyshacl`, `networkx`, `graph_ragu`.
+Стек: `fastapi`, `uvicorn[standard]`, `pydantic>=2`, `httpx` (для upstream), `rdflib`, `pyshacl`, `networkx` (`graph_ragu` снят в 2026 — см. рецепт RAGU выше).
 
 Запуск: `uvicorn app.main:app --reload --port 8000`.
 

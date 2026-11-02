@@ -8,7 +8,7 @@ repo: ~/POLINOM
 deployed: https://polinom-sigma-audit.up.railway.app/
 related_repo: https://github.com/Barbashin1970/POLINOM
 created: 2026-03-01
-updated: 2026-05-29
+updated: 2026-10-31
 related:
   - concepts/sigma-methodology.md
   - projects/active/polinom-java/
@@ -18,6 +18,8 @@ related:
 
 > **Где код:** `~/POLINOM/`
 > **Playground:** https://polinom-sigma-audit.up.railway.app/
+> **На портфолио:** карточка Polinom-Python в избранном (до 2026-10-31 — «Сигма-аудит»);
+> Java-вариант — Polinom-Java, см. [polinom-java](../polinom-java/README.md).
 > **Что это:** научно-инструментальный проект вокруг **Сигма-методологии**
 > полиномиальной сложности (Гончаров/Нечесов/Свириденко, ИМ СО РАН).
 > Включает CLI-аудитор, agent-rules для AI-ассистентов и эмпирический бенч.

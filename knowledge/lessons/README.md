@@ -62,7 +62,10 @@ tags: [meta, knowledge, lessons]
   сообщает. Ключ инвалидации — состояние данных, а не факт нажатия: тогда
   одно решение закрывает и кнопку, и фоновую задачу. `location.reload()` —
   не лечение: теряются прокрутка, раскрытые разделы и набранный текст.
-  Плюс: как тестировать поллер узлом, без браузера.
+  Плюс: как тестировать поллер узлом, без браузера. Четвёртый случай (LEYKA,
+  10.10.2026): инвалидация была, но экран перешёл к проекту, не дождавшись
+  перезапроса, и забыли зависимый список заказчиков. Перед переходом —
+  `await`; мутация членства портит всё, что зависит от видимости.
 
 - [`search-agent-fanout-without-provenance.md`](search-agent-fanout-without-provenance.md)
   — НОРМА-СТРОЙ: один запущенный поисковый агент породил шесть, три пришлось убивать;
@@ -224,6 +227,44 @@ tags: [meta, knowledge, lessons]
   выбирал боевую проверку, ходящую в чужие системы. Исключение — в хуке сбора;
   опечатку в выражении отбора сторожит отдельная проверка.
 
+- [`splitlines-drops-rows-on-soft-line-break.md`](splitlines-drops-rows-on-soft-line-break.md)
+  — LEYKA: в таблице плана, выгруженной из офисного редактора, мягкий перенос
+  в ячейке приехал символом 0x0B. `splitlines()` развалил по нему три строки
+  таблицы, и разбор молча их отбросил. Поймала сверка с независимым списком
+  пунктов — без неё три КТ из 53 не попали бы на доску. Выгрузки читать через
+  `split("\n")`; разбор, пропускающий строки, обязан их считать и падать
+  при расхождении.
+
+- [`python-org-macos-urllib-no-root-certificates.md`](python-org-macos-urllib-no-root-certificates.md)
+  — LEYKA: `curl` до прода отвечает, а `urllib` падает с CERTIFICATE_VERIFY_FAILED.
+  Python с python.org на macOS несёт свой OpenSSL без корневых сертификатов,
+  пока не запущен `Install Certificates.command`; certifi в venv `urllib`
+  не видит. Лечится через `cafile=`, а не отключением проверки. Сухой прогон
+  должен ходить в сеть на чтение, а боевой — начинаться со входа, а не с записи.
+
+- [`vpn-server-ip-blocked-swap-primary-ip-via-api.md`](vpn-server-ip-blocked-swap-primary-ip-via-api.md)
+  — FREEWAY: у всей семьи разом пропал VPN, а одно устройство работало. Сервер жив,
+  письмо Hetzner про PHP — совпадение: в РФ закрыли сам IP (новые соединения, TCP
+  и UDP, все порты; старый поток жил). Диагноз — проверка пути в обход включённого
+  VPN (`IP_BOUND_IF` на `en0`) и `tcpdump` на сервере. Лечение — новый основной IPv4
+  по токену API одной командой, около минуты простоя. Оценка Floating IP: €3 против
+  €0,50 в месяц, зато без простоя и без правки панели.
+
+- [`masquerade-picks-floating-ip-as-source.md`](masquerade-picks-floating-ip-as-source.md)
+  — FREEWAY: запасные плавающие IP добавили через netplan, и NAT Docker начал выпускать
+  трафик всех VPN-клиентов с запасного адреса, а не с основного. Хост при этом ходил
+  с основного. MASQUERADE берёт первый глобальный адрес интерфейса и не смотрит на
+  `src` маршрута, а DHCP-адрес встал последним. Лечится `Scope=link` в дополнении
+  к конфигу networkd (у netplan нет scope). Исходящий IP проверять из контейнера,
+  а не на хосте.
+
+- [`sqlite-naive-utc-read-as-browser-local-time.md`](sqlite-naive-utc-read-as-browser-local-time.md)
+  — LEYKA: бэкенд пишет UTC, SQLite хранит без пояса, API отдаёт время без «Z»,
+  браузер читает его как местное — в Новосибирске (UTC+7) весь чат на 7 часов
+  раньше. Лечится в схеме ответа (`UtcDatetime`) и решением по каждому полю:
+  момент — с поясом, календарная дата (`due_date`) — без, иначе срок «18:00»
+  станет 01:00. Сторож требует решения у каждого datetime-поля схем.
+
 - [`migration-must-account-for-what-it-destroys.md`](migration-must-account-for-what-it-destroys.md)
   — РАГРАФ: разовая миграция переводила регламент экземпляра на новую схему и удаляла
   29 порогов, которые могли править на месте, без следа; сохранённый из редактора текст
@@ -236,6 +277,40 @@ tags: [meta, knowledge, lessons]
   из базы, «потому что Turtle её не несёт», — правка молча откатывалась. Добавил поле
   в формат — найди всё, что опиралось на его отсутствие: раздел «что не переносится»
   и есть список мест. Разбор обязан отличать объявленное в тексте от умолчания.
+
+- [`vscode-publish-to-github-without-commit.md`](vscode-publish-to-github-without-commit.md) — portfolio: «Publish to GitHub» без коммита создал пустой публичный репозиторий и упал на пуше; первый коммит — до публикации.
+- [`guessed-vercel-subdomain-belongs-to-someone-else.md`](guessed-vercel-subdomain-belongs-to-someone-else.md) — portfolio: `boardway.vercel.app` ответил 200, но был чужим; адрес — из источника, проверка — по `<title>` и бандлу.
+- [`nbsp-and-overflow-hidden-hide-heading-overflow.md`](nbsp-and-overflow-hidden-hide-heading-overflow.md) — portfolio: H1 вылез на 375 px, а `overflow: hidden` спрятал это от проверки страницы; мерить сам заголовок, размер в `vw`.
+- [`sr-only-escapes-scroller-without-positioned-ancestor.md`](sr-only-escapes-scroller-without-positioned-ancestor.md) — portfolio: сняли с карточек «стекло» — подписи sr-only вылезли из ленты и раздвинули страницу до 973 px на 320; блок отсчёта молча давал `backdrop-filter`, лечение — `position: relative` на карточке.
+- [`lenis-scrollto-double-offset-and-stale-limit.md`](lenis-scrollto-double-offset-and-stale-limit.md) — portfolio: Lenis 1.3 сам вычитает `scroll-margin-top`, и offset под шапку дал двойной отступ; предел прокрутки устаревает после смены вёрстки — `lenis.resize()` перед переходом.
+- [`screen-recording-of-live-system-leaks-third-party-data.md`](screen-recording-of-live-system-leaks-third-party-data.md) — portfolio: запись экрана живой LEYKA несла чужие имена, аккаунт Google и KPI; проверка по кадрам до публикации, двигающееся — вырезать, неподвижное — размыть.
+- [`phone-photo-carries-exif-into-public-site.md`](phone-photo-carries-exif-into-public-site.md) — portfolio: фото с телефона легло в `public/`, откуда всё уходит на сайт как есть, а в снимке был EXIF; исходник — вне `public/` и git, на сайт — WebP с `-map_metadata -1`, тест-сторож по всем медиа.
+
+Уроки из сверки книги «Системный аналитик в эпоху гибридного ИИ» с изделием РАГРАФ (30.10.2026):
+
+- [`react-flow-split-change-callbacks-overwrite-each-other.md`](react-flow-split-change-callbacks-overwrite-each-other.md) — РАГРАФ: React Flow удаляет узел двумя вызовами, холст отдавал наверх оба массива, и второй затирал первый — связи повисали; наверх — только дельта, удаление с отсечением связей — одной чистой функцией.
+- [`zod-strips-unknown-keys-and-crashes-on-new-enum.md`](zod-strips-unknown-keys-and-crashes-on-new-enum.md) — РАГРАФ: `z.object` молча режет необъявленные поля (три потери при сохранении), закрытый `z.enum` роняет экран на новом значении; схема ответа — копия договора, её сторожит сверка с моделью сервера.
+- [`defensive-overflow-hidden-and-guard-that-locked-the-defect.md`](defensive-overflow-hidden-and-guard-that-locked-the-defect.md) — РАГРАФ: `overflow-hidden` «на всякий случай» обрезал меню, а проверка раскладки требовала этот класс; сторож формулируется от требования, а не от реализации.
+- [`draft-autosave-written-but-never-read.md`](draft-autosave-written-but-never-read.md) — РАГРАФ: черновик пишется в localStorage каждые 30 с с первого коммита, а читателя нет; защита от потери проверяется восстановлением.
+- [`artifact-excluded-from-image-looks-unwritten.md`](artifact-excluded-from-image-looks-unwritten.md) — РАГРАФ: `docs/` не попал в образ, и страница комплекта ГОСТ 19 на проде показала «0 из 11»; «файла нет» ≠ «не написан», всё читаемое изделием — статика поставки.
+- [`two-adr-registries-make-references-ambiguous.md`](two-adr-registries-make-references-ambiguous.md) — РАГРАФ: два реестра решений (21 и 26 записей) с разной нумерацией, решения после мая — только в разборах; реестр один, разбор ссылается на номер.
+- [`global-unit-table-diverges-from-source-data.md`](global-unit-table-diverges-from-source-data.md) — РАГРАФ: «Высота снега, м = 0,01 см» — кодовая таблица «имя → единица» врала для источника в метрах; единица живёт рядом с данными.
+- [`foreign-api-contract-drifts-silently.md`](foreign-api-contract-drifts-silently.md) — РАГРАФ ↔ LEYKA: `/api/v1/api/tasks` давал 404 без единой ошибки на экране, а `status` вместо `status_filter` FastAPI молча игнорирует; договор проверяет проба против живой системы.
+- [`create-table-if-not-exists-skips-new-columns.md`](create-table-if-not-exists-skips-new-columns.md) — РАГРАФ: новая колонка в `CREATE TABLE IF NOT EXISTS` не доехала до тома — 18 дней опросы не записывались при «отправлено» в журнале; схему меняет только миграция, в проверках — случай «старый том».
+- Дополнен [`document-promise-needs-a-guard.md`](document-promise-needs-a-guard.md) — второй случай: правило дизайн-системы РАГРАФ, 460 нарушений в 88 файлах.
+
+Уроки из выкладки книг и курсов на страницу документации РАГРАФ (31.10.2026):
+
+- [`heading-anchor-rule-must-match-github.md`](heading-anchor-rule-must-match-github.md) — РАГРАФ: свой разборщик схлопывал « — » в один дефис и нумеровал повтор с «-2», и оглавление на 243 ссылки, написанное под GitHub, на странице молчало бы; якорь — по правилу github-slugger, оглавление — скриптом, сторож «каждая #ссылка ведёт к заголовку».
+- [`registry-copy-of-document-edition-drifts.md`](registry-copy-of-document-edition-drifts.md) — РАГРАФ: шапка документа — редакция 6, перечень страницы — 5; документ шестнадцать дней печатался под прежней редакцией; атрибут живёт у владельца, копия сверяется поимённо.
+- [`changed-decision-leaves-trace-in-dependencies.md`](changed-decision-leaves-trace-in-dependencies.md) — РАГРАФ: `@dnd-kit` взяли по примеру LEYKA, решение сменили на нативный DnD React Flow, а пакеты пять месяцев жили в зависимостях и рождали пустой фрагмент сборки; сторож «объявлено ↔ импортировано».
+- [`published-page-ignored-document-distribution-clause.md`](published-page-ignored-document-distribution-clause.md) — РАГРАФ: программу курса с оговоркой «не публикуется до утверждения» выложили на открытую страницу и нашли оговорку после пуша; перед выкладкой — поиск оговорок распространения, решение — за автором.
+- Дополнен [`artifact-excluded-from-image-looks-unwritten.md`](artifact-excluded-from-image-looks-unwritten.md) — второй случай: книги переехали в `backend/data/knigi/` до показа; сторож «каталог реестра скопирован строкой `Dockerfile`» заведён.
+
+Уроки из выкладки «Справочника строителя умного города» РАГРАФ (31.10.2026, коммит `47f0419`):
+
+- [`unanchored-grep-counts-docstring-example.md`](unanchored-grep-counts-docstring-example.md) — РАГРАФ: два документа с командами назвали 252 и 251 обработчик; команда без `^` засчитала пример в строке документации; конструкции кода считают привязанным образцом или по AST, две цифры одного утверждения сверяют списками совпадений.
+- [`guard-scope-list-does-not-grow-with-delivery.md`](guard-scope-list-does-not-grow-with-delivery.md) — РАГРАФ: сторож терминов перечнем каталогов охранял код и комплекты; книги переехали в поставку и вышли на открытую страницу мимо него; охват сторожа — из реестра поставки, новый каталог — пересмотр перечней всех сторожей.
 
 ## Жанры уроков
 

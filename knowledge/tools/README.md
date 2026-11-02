@@ -17,6 +17,14 @@ docker, vercel, postgres CLI, IDE-настройки, и т.д.
   (`docker-cleanup-commands.md`).
 - Настройки IDE, которые повторяешь между машинами (`vscode-mcp-setup.md`).
 
+## Заметки
+
+- [slides-txt-export.md](slides-txt-export.md) — выгрузка слайдов в .txt из Google Slides:
+  что в ней теряется и переставляется, как её нормализовать и проверять правки до записи.
+- [headless-chrome-layout-checks-via-devtools.md](headless-chrome-layout-checks-via-devtools.md) —
+  проверка вёрстки без Playwright: эмуляция экрана и reduced-motion по протоколу DevTools
+  из Node 22, ожидание в реальном времени, скриншоты; почему не окно и не виртуальное время.
+
 ## Чем отличается от stacks/
 
 - `tools/` — про **процесс разработки**: что я запускаю в терминале / IDE.

@@ -7,7 +7,7 @@ category: A
 repo: ~/RAGRAF
 deployed: https://ragraf.up.railway.app
 created: 2026-05-01
-updated: 2026-05-26
+updated: 2026-10-30
 related:
   - concepts/zadachny-podhod.md
   - concepts/tfs-anokhina.md
@@ -50,8 +50,12 @@ RAGRAF — практическая реализация **задачного п
 | Backend | Python 3.12, FastAPI, rdflib, pyshacl, DuckDB (local store) |
 | Storage | DuckDB authoritative + Turtle/OWL fixtures + опционально upstream Sigma |
 | Frontend | React 18, Vite, TanStack Query, Zustand, React Flow (DSL), Cytoscape (graph view) |
-| AI | RAGU GraphRAG (опционально); OpenAI-compatible chat |
+| AI | Языковая модель по протоколу, совместимому с OpenAI: по умолчанию локальная Ollama; на проде — Cerebras, эмбеддинги Jina. RAGU (GraphRAG) снят — см. «Почему без RAGU» |
 | Deploy | Railway (single-server full-stack) |
+
+### Почему без RAGU
+
+От GraphRAG-движка RAGU в процессе работы отказались: интеграция удалена из проекта 22.05.2026, пакет `graph_ragu` — из окружения 06.09.2026. Проверить RAGU как следует не смогли: его модель работает только на Windows, а мы проверяли упрощённую версию. Вывод — графы по регламенту РАГРАФ строит сам, на своём стеке: граф регламента на Flow DSL, тройки Turtle и граф знаний с запросами SPARQL. Усложнять изделие зависимостью от RAGU не будем. Историческая справка — `~/RAGRAF/docs/RAGU_SURFACE.md`.
 
 ## Документация (в `~/RAGRAF/docs/`)
 
@@ -74,7 +78,7 @@ RAGRAF — практическая реализация **задачного п
 | `CAMPUS-NSU-REGULATIONS.md` | — кейс с НГУ кампусом |
 | `E2E-TRAFFIC-SPEED-FINE.md` | — end-to-end сценарий |
 | `FORMULA-SPEC.md` | — спецификация формул |
-| `RAGU_SURFACE.md` | — поверхность GraphRAG |
+| `RAGU_SURFACE.md` | — историческая справка: поверхность GraphRAG RAGU (снят 22.05.2026) |
 | `STRATEGY-POSITIONING.md` | 2 — позиционирование (~200 строк) |
 | `sigma-audit-RAGRAF-2026-05-13*.md` | — аудиты sigma-методологией |
 | `PLAN-R-MOCK.md`, `CONCEPT-ARHI-CONSTRUCTION.md`, `REQ-*.md` | 2-3 — концепты и требования |
@@ -86,7 +90,7 @@ RAGRAF — практическая реализация **задачного п
 ## Skills RAGRAF (специфические рецепты)
 
 См. локальный [skills.md](skills.md) (перенесённый из MY-VOLUME).
-Покрывает: React Flow DnD, Cytoscape, SHACL bridge, RAGU integration,
+Покрывает: React Flow DnD, Cytoscape, SHACL bridge, RAGU integration (исторический рецепт),
 FastAPI layout, Turtle serializer, DuckDB threading, optimistic
 mutations, three-view editor, versioning.
 

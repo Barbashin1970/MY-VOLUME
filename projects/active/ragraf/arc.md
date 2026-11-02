@@ -2,7 +2,7 @@
 title: Архитектура RAGRAF (краткая карта)
 description: Карта-указатель на полную архитектуру в ~/RAGRAF/docs/. Здесь — только ключевые отметки.
 tags: [project, ragraf, arc]
-updated: 2026-05-26
+updated: 2026-10-30
 ---
 
 # Архитектура RAGRAF
@@ -17,7 +17,7 @@ updated: 2026-05-26
 ┌─────────────────────────────────────────────────────┐
 │ Frontend (React + Vite + React Flow + Cytoscape)    │
 ├─────────────────────────────────────────────────────┤
-│ Backend (FastAPI + rdflib + pyshacl + RAGU)         │
+│ Backend (FastAPI + rdflib + pyshacl)                │
 ├─────────────────────────────────────────────────────┤
 │ Storage (DuckDB authoritative + Turtle fixtures)    │
 ├─────────────────────────────────────────────────────┤

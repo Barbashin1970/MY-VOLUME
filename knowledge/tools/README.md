@@ -24,6 +24,12 @@ docker, vercel, postgres CLI, IDE-настройки, и т.д.
 - [headless-chrome-layout-checks-via-devtools.md](headless-chrome-layout-checks-via-devtools.md) —
   проверка вёрстки без Playwright: эмуляция экрана и reduced-motion по протоколу DevTools
   из Node 22, ожидание в реальном времени, скриншоты; почему не окно и не виртуальное время.
+- [airllm-on-apple-silicon.md](airllm-on-apple-silicon.md) — совет «pip install airllm — мощные
+  модели на слабом ноутбуке», проверенный замером: на MacBook Air M2 16 ГБ в ≈366 раз медленнее
+  Ollama, пик памяти 14,5 ГБ, на длинном промпте ответ неверный; ловушки пути MLX и чем заменить.
+  - [airllm-apple-silicon-report-2026-11-02.md](airllm-apple-silicon-report-2026-11-02.md) —
+    отчёт об опыте по образцу НИР; [приложение](airllm-apple-silicon-report-2026-11-02-appendix.md) —
+    протокол замеров, прогонщики, команды.
 
 ## Чем отличается от stacks/
 

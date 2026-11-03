@@ -3,7 +3,7 @@ title: AirLLM на Apple Silicon — запускается, но в сотни 
 description: "Совет из коротких видео «pip install airllm — мощные модели на слабом ноутбуке» проверен замером 2026-11-02 на MacBook Air M2 16 ГБ. Llama 3.1 8B, промпт на 1,5 тыс. токенов: AirLLM — 22,35 с на токен, пик памяти 14,5 ГБ, ответ неверный; Ollama на тех же весах (Q4_K_M) — 0,061 с на токен, ответ верный. На Mac только Llama и Mistral, релиз на PyPI без исправлений для Mac, rope_scaling Llama 3.1 не учитывается, trust_remote_code включён по умолчанию. Вывод: на Mac не использовать, локальные модели — через Ollama."
 tags: [tool, airllm, ollama, local-llm, apple-silicon, mlx, macos]
 created: 2026-11-02
-updated: 2026-11-02
+updated: 2026-11-03
 related:
   - knowledge/tools/airllm-apple-silicon-report-2026-11-02.md
   - knowledge/tools/airllm-apple-silicon-report-2026-11-02-appendix.md
@@ -86,6 +86,12 @@ Ollama с моделями 7–8B в 4 битах (около 5 ГБ). На эт
 дала 16,9 ток/с на промпте в 1,7 тыс. токенов и ответила верно. Именно она и bge-m3 стоят
 в настройках [РАГРАФ](../../projects/active/ragraf/README.md) для локального режима. Модели
 12–14B (8–9 ГБ) на 16 ГБ — только при закрытых тяжёлых приложениях.
+
+Скорость зависит от питания: при заряде 9 % и зарядке от адаптера 30 Вт та же qwen2.5:7b дала
+7,3–7,5 ток/с, на заряженной батарее — 16,1–17,1
+([приложение Д](airllm-apple-silicon-report-2026-11-02-appendix.md)). Мерить скорость
+и записывать в условия замера заряд и адаптер: `pmset -g batt`. Урок:
+[laptop-benchmark-halved-on-low-battery-weak-charger](../lessons/laptop-benchmark-halved-on-low-battery-weak-charger.md).
 
 ## Источники
 

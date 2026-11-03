@@ -316,6 +316,10 @@ tags: [meta, knowledge, lessons]
 
 - [`when-to-use-breaks-claude-ai-upload.md`](when-to-use-breaks-claude-ai-upload.md) — PRECONSTRUCTION ↔ NSU-AI-SKILLS, PROMPT-Professor: поле `when_to_use`, которым уложили русские описания в 1024 байта Perplexity, понимает только Claude Code — валидатор Anthropic отвергает такие навыки для claude.ai и Skills API; одна шапка, годная везде, — шесть полей спецификации, описание до 1024 байт, сторож на допустимые поля и `quick_validate.py` на распакованном архиве.
 
+Уроки из опыта «AirLLM против Ollama» на MacBook Air M2 (02–03.11.2026):
+
+- [`laptop-benchmark-halved-on-low-battery-weak-charger.md`](laptop-benchmark-halved-on-low-battery-weak-charger.md) — опыт с локальными моделями: после перезагрузки qwen2.5:7b в Ollama дала 7,3–7,5 ток/с вместо 16,9 при чистой памяти — батарея 9 % на адаптере 30 Вт; на заряженной батарее снова 16,1–17,1. Причина вероятна, не доказана: сменились ещё ОС и Ollama. Питание — часть условий замера, сравнивать только равное питание, после обновления ждать конца фоновой работы.
+
 ## Жанры уроков
 
 | Жанр | Пример | Тег |

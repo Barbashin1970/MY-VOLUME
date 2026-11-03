@@ -320,6 +320,10 @@ tags: [meta, knowledge, lessons]
 
 - [`laptop-benchmark-halved-on-low-battery-weak-charger.md`](laptop-benchmark-halved-on-low-battery-weak-charger.md) — опыт с локальными моделями: после перезагрузки qwen2.5:7b в Ollama дала 7,3–7,5 ток/с вместо 16,9 при чистой памяти — батарея 9 % на адаптере 30 Вт; на заряженной батарее снова 16,1–17,1. Причина вероятна, не доказана: сменились ещё ОС и Ollama. Питание — часть условий замера, сравнивать только равное питание, после обновления ждать конца фоновой работы.
 
+Уроки из ведения vault и выкладки на GitHub (03.11.2026):
+
+- [`frontmatter-unquoted-colon-breaks-github-render.md`](frontmatter-unquoted-colon-breaks-github-render.md) — vault: отчёт о сервере для НГУ открылся на GitHub с «Error in user YAML»: двоеточие с пробелом в `title` без кавычек YAML читает как новую пару «ключ: значение»; проверка тем же парсером нашла ещё 8 таких заметок из 191. `title` и `description` — всегда в двойных кавычках; сторож — pre-commit-хук [git-hooks-pre-commit](../tools/git-hooks-pre-commit.md).
+
 ## Жанры уроков
 
 | Жанр | Пример | Тег |

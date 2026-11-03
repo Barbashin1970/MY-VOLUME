@@ -30,6 +30,11 @@ docker, vercel, postgres CLI, IDE-настройки, и т.д.
   - [airllm-apple-silicon-report-2026-11-02.md](airllm-apple-silicon-report-2026-11-02.md) —
     отчёт об опыте по образцу НИР; [приложение](airllm-apple-silicon-report-2026-11-02-appendix.md) —
     протокол замеров, прогонщики, команды.
+- [llm-server-2x-rtx5090-report-2026-11-03.md](llm-server-2x-rtx5090-report-2026-11-03.md) — сервер
+  языковых моделей на двух RTX 5090 для НГУ: блок 850 Вт не тянет пик ≈1,48 кВт, SSD в M.2_1 отключает
+  второй слот видеокарты, Qwen 27B в FP8 и 250–300 тыс. токенов контекста в 64 ГБ, GigaChat 3.5 не
+  помещается; [приложение](llm-server-2x-rtx5090-report-2026-11-03-appendix.md) — расчёт памяти,
+  программа проверки, подключение РАГРАФ.
 
 ## Чем отличается от stacks/
 

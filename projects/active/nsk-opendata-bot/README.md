@@ -65,6 +65,14 @@ data.gov.ru, openbudget.mfnso.ru, Яндекс.Расписания, 2GIS, ГИ�
 - Урок: [seed-placeholders-block-real-data-import](../../../knowledge/lessons/seed-placeholders-block-real-data-import.md)
   — стартовая сеялка-заглушка заняла первичные ключи и заблокировала импорт
   реальных суток из бэкапа (2026-08-19).
+- Урок: [cams-global-model-does-not-resolve-city-districts](../../../knowledge/lessons/cams-global-model-does-not-resolve-city-districts.md)
+  — воздух «по районам» оказался сеткой модели CAMS, замеров нет (2026-11-17).
+- Урок: [official-advice-claimed-powers-city-does-not-have](../../../knowledge/lessons/official-advice-claimed-powers-city-does-not-have.md)
+  — текст служащему приписывал мэрии полномочия по НМУ, «норма ВОЗ» вместо ПДК (2026-11-17).
+- Урок: [daily-zero-crossing-ice-alert-fails-outcome-check](../../../knowledge/lessons/daily-zero-crossing-ice-alert-fails-outcome-check.md)
+  — оповещение о гололёде по одной температуре горело всегда и не прошло проверку на ДТП (2026-11-17).
+- Урок: [open-meteo-archive-default-is-forecast-not-reanalysis](../../../knowledge/lessons/open-meteo-archive-default-is-forecast-not-reanalysis.md)
+  — «факт» из архива Open-Meteo по умолчанию оказался тем же прогнозом IFS; ретропроверка снега (2026-11-18).
 - Концепт: [iq-roadmap](../../../concepts/iq-roadmap.md)
 - Плейбук: [09-charter-reports-growth](../../../docs/playbooks/09-charter-reports-growth.md) §C
 - Использован как референс в: [ragraf](../ragraf/) (Studio editor)

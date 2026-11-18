@@ -133,3 +133,16 @@ React Flow.
 - [x] [guard-scope-list-does-not-grow-with-delivery.md](../../../knowledge/lessons/guard-scope-list-does-not-grow-with-delivery.md) — сторож терминов не видит книги поставки (не починено, в бэклоге)
 - [x] паттерн [verify-by-parts-then-splice.md](../../../knowledge/patterns/verify-by-parts-then-splice.md) — сверка по частям и склейка
 
+---
+
+## 2026-11-08 — Заведено по ПМИ РАГРАФ-ФРЕЙМ-51 и решению о пароле в образце настроек
+
+ПМИ РАГРАФ-ФРЕЙМ-51 редакции 1 (07.11.2026): 131 испытание, ведомость 147 пунктов ТЗ, долги
+П-1…П-17 до сдачи модулем СИГМЫ. 08.11.2026 работа П-3 закрыта решением владельца: пароль
+администратора убран из образца настроек, установка из образца пускает в «Админ» щелчком.
+Заведено по просьбе Олега:
+
+- [x] [acceptance-runner-by-file-hides-skipped-tests.md](../../../knowledge/lessons/acceptance-runner-by-file-hides-skipped-tests.md) — пропуск в прогонщике приёмки показан зелёным «✓ 0/0» (не починено, работа П-1)
+- [x] [env-example-secret-copied-into-every-install.md](../../../knowledge/lessons/env-example-secret-copied-into-every-install.md) — учебный пароль из образца в каждой установке лаунчером; закрыто 08.11.2026, сторож `test_obrazec_nastroek.py`
+- [x] [markdown-table-parser-splits-on-pipe-in-code.md](../../../knowledge/lessons/markdown-table-parser-splits-on-pipe-in-code.md) — разборщик страницы режет ячейку по вертикальной черте в коде (не починено, в бэклоге с 31.10.2026)
+
